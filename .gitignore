@@ -1,0 +1,55 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Virtual environment
+.venv/
+venv/
+env/
+
+# Secrets
+.env
+.env.*
+!.env.example
+
+# Large datasets
+data/raw/
+data/cache/
+data/processed/
+dataset/
+*.csv
+*.xlsx
+*.xls
+*.json
+
+# Databases
+*.db
+*.sqlite
+*.sqlite3
+
+# Logs
+logs/
+*.log
+
+# Playwright
+playwright-report/
+test-results/
+
+# Browser/cache
+browser_data/
+amazon_profile/
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Generated files
+reports/generated/
+*.png
+*.jpg
+*.jpeg
