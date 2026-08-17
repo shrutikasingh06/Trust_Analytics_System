@@ -8,37 +8,12 @@ __pycache__/
 venv/
 env/
 
-# Secrets
+# Environment variables
 .env
 .env.*
-!.env.example
 
-# Large datasets
-data/raw/
-data/cache/
-data/processed/
-dataset/
-*.csv
-*.xlsx
-*.xls
-*.json
-
-# Databases
-*.db
-*.sqlite
-*.sqlite3
-
-# Logs
-logs/
-*.log
-
-# Playwright
-playwright-report/
-test-results/
-
-# Browser/cache
-browser_data/
-amazon_profile/
+# Jupyter
+.ipynb_checkpoints/
 
 # IDE
 .vscode/
@@ -48,8 +23,36 @@ amazon_profile/
 .DS_Store
 Thumbs.db
 
-# Generated files
-reports/generated/
+# Logs
+*.log
+logs/
+
+# Playwright / Browser cache
+data/cache/
+playwright-report/
+test-results/
+
+# Screenshots
 *.png
 *.jpg
 *.jpeg
+
+# Local databases
+*.db
+*.sqlite
+*.sqlite3
+
+# Temporary files
+*.tmp
+*.temp
+
+# Large datasets
+data/raw/
+data/cache/
+dataset/raw/
+dataset/processed/
+
+# Python build files
+*.egg-info/
+dist/
+build/
