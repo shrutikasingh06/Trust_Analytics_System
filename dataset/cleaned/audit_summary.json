@@ -1,0 +1,564 @@
+{
+  "files": [
+    {
+      "file": "Cell_Phones_and_Accessories.csv",
+      "rows": 141945,
+      "cols": [
+        "_id",
+        "reviewerID",
+        "asin",
+        "reviewerName",
+        "helpful",
+        "reviewText",
+        "overall",
+        "summary",
+        "unixReviewTime",
+        "reviewTime",
+        "category",
+        "class"
+      ],
+      "class_counts": {
+        "1.0": 93275,
+        "0.0": 48670
+      },
+      "label_counts": {},
+      "dup_triple": 0,
+      "dup_row": 0,
+      "elapsed_sec": 3.62
+    },
+    {
+      "file": "Clothing_Shoes_and_Jewelry.csv",
+      "rows": 5504331,
+      "cols": [
+        "_id",
+        "reviewerID",
+        "asin",
+        "reviewerName",
+        "helpful",
+        "reviewText",
+        "overall",
+        "summary",
+        "unixReviewTime",
+        "reviewTime",
+        "category",
+        "class"
+      ],
+      "class_counts": {
+        "1.0": 4334882,
+        "0.0": 1169449
+      },
+      "label_counts": {},
+      "dup_triple": 0,
+      "dup_row": 0,
+      "elapsed_sec": 179.19
+    },
+    {
+      "file": "Electronics.csv",
+      "rows": 7574169,
+      "cols": [
+        "_id",
+        "reviewerID",
+        "asin",
+        "reviewerName",
+        "helpful",
+        "reviewText",
+        "overall",
+        "summary",
+        "unixReviewTime",
+        "reviewTime",
+        "category",
+        "class"
+      ],
+      "class_counts": {
+        "1.0": 5751275,
+        "0.0": 1822894
+      },
+      "label_counts": {},
+      "dup_triple": 0,
+      "dup_row": 0,
+      "elapsed_sec": 525.16
+    },
+    {
+      "file": "Home_and_Kitchen.csv",
+      "rows": 3988482,
+      "cols": [
+        "_id",
+        "reviewerID",
+        "asin",
+        "reviewerName",
+        "helpful",
+        "reviewText",
+        "overall",
+        "summary",
+        "unixReviewTime",
+        "reviewTime",
+        "category",
+        "class"
+      ],
+      "class_counts": {
+        "1.0": 3165285,
+        "0.0": 823197
+      },
+      "label_counts": {},
+      "dup_triple": 0,
+      "dup_row": 0,
+      "elapsed_sec": 174.75
+    },
+    {
+      "file": "part.csv",
+      "rows": 99939,
+      "cols": [
+        "_id",
+        "reviewerID",
+        "asin",
+        "reviewerName",
+        "helpful",
+        "reviewText",
+        "overall",
+        "summary",
+        "unixReviewTime",
+        "reviewTime",
+        "category",
+        "BehaviouralFeatureResult",
+        "label"
+      ],
+      "class_counts": {},
+      "label_counts": {
+        "": 80190,
+        "0.0": 19749
+      },
+      "dup_triple": 39,
+      "dup_row": 39,
+      "elapsed_sec": 8.73
+    },
+    {
+      "file": "separate.csv",
+      "rows": 1524234,
+      "cols": [
+        "reviewerID",
+        "asin",
+        "reviewerName",
+        "helpful",
+        "reviewText",
+        "overall",
+        "summary",
+        "unixReviewTime",
+        "reviewTime",
+        "category",
+        "class",
+        "BehaviouralFeatureResult",
+        "label"
+      ],
+      "class_counts": {
+        "0.0": 126222,
+        "1.0": 73773,
+        "": 1324239
+      },
+      "label_counts": {
+        "0": 1493221,
+        "1": 31013
+      },
+      "dup_triple": 3283,
+      "dup_row": 3283,
+      "elapsed_sec": 73.24
+    },
+    {
+      "file": "Sports_and_Outdoors.csv",
+      "rows": 3013256,
+      "cols": [
+        "_id",
+        "reviewerID",
+        "asin",
+        "reviewerName",
+        "helpful",
+        "reviewText",
+        "overall",
+        "summary",
+        "unixReviewTime",
+        "reviewTime",
+        "category",
+        "class"
+      ],
+      "class_counts": {
+        "1.0": 2481105,
+        "0.0": 532151
+      },
+      "label_counts": {},
+      "dup_triple": 0,
+      "dup_row": 0,
+      "elapsed_sec": 147.46
+    },
+    {
+      "file": "Toys_and_Games.csv",
+      "rows": 1997140,
+      "cols": [
+        "_id",
+        "reviewerID",
+        "asin",
+        "reviewerName",
+        "helpful",
+        "reviewText",
+        "overall",
+        "summary",
+        "unixReviewTime",
+        "reviewTime",
+        "category",
+        "class"
+      ],
+      "class_counts": {
+        "1.0": 1662754,
+        "0.0": 334386
+      },
+      "label_counts": {},
+      "dup_triple": 0,
+      "dup_row": 0,
+      "elapsed_sec": 78.85
+    }
+  ],
+  "class_meaning": {
+    "Cell_Phones_and_Accessories.csv": {
+      "appears_deterministic_from_overall": true,
+      "overall_to_class": {
+        "5.0": {
+          "1.0": 63581
+        },
+        "4.0": {
+          "1.0": 29694
+        },
+        "1.0": {
+          "0.0": 23843
+        },
+        "3.0": {
+          "0.0": 13584
+        },
+        "2.0": {
+          "0.0": 11243
+        }
+      }
+    },
+    "Clothing_Shoes_and_Jewelry.csv": {
+      "appears_deterministic_from_overall": true,
+      "overall_to_class": {
+        "5.0": {
+          "1.0": 3236871
+        },
+        "4.0": {
+          "1.0": 1098011
+        },
+        "3.0": {
+          "0.0": 507187
+        },
+        "1.0": {
+          "0.0": 350334
+        },
+        "2.0": {
+          "0.0": 311928
+        }
+      }
+    },
+    "Electronics.csv": {
+      "appears_deterministic_from_overall": true,
+      "overall_to_class": {
+        "5.0": {
+          "1.0": 4286308
+        },
+        "4.0": {
+          "1.0": 1464967
+        },
+        "1.0": {
+          "0.0": 825661
+        },
+        "3.0": {
+          "0.0": 579557
+        },
+        "2.0": {
+          "0.0": 417676
+        }
+      }
+    },
+    "Home_and_Kitchen.csv": {
+      "appears_deterministic_from_overall": true,
+      "overall_to_class": {
+        "5.0": {
+          "1.0": 2443404
+        },
+        "4.0": {
+          "1.0": 721881
+        },
+        "1.0": {
+          "0.0": 342280
+        },
+        "3.0": {
+          "0.0": 282900
+        },
+        "2.0": {
+          "0.0": 198017
+        }
+      }
+    },
+    "separate.csv": {
+      "appears_deterministic_from_overall": true,
+      "overall_to_class": {
+        "1.0": {
+          "": 349970,
+          "0.0": 49863
+        },
+        "5.0": {
+          "": 330287,
+          "1.0": 55830
+        },
+        "3.0": {
+          "": 321667,
+          "0.0": 46306
+        },
+        "2.0": {
+          "": 212588,
+          "0.0": 30053
+        },
+        "4.0": {
+          "": 109727,
+          "1.0": 17943
+        }
+      }
+    },
+    "Sports_and_Outdoors.csv": {
+      "appears_deterministic_from_overall": true,
+      "overall_to_class": {
+        "5.0": {
+          "1.0": 1862444
+        },
+        "4.0": {
+          "1.0": 618661
+        },
+        "3.0": {
+          "0.0": 212979
+        },
+        "1.0": {
+          "0.0": 189639
+        },
+        "2.0": {
+          "0.0": 129533
+        }
+      }
+    },
+    "Toys_and_Games.csv": {
+      "appears_deterministic_from_overall": true,
+      "overall_to_class": {
+        "5.0": {
+          "1.0": 1275445
+        },
+        "4.0": {
+          "1.0": 387309
+        },
+        "3.0": {
+          "0.0": 129098
+        },
+        "1.0": {
+          "0.0": 128156
+        },
+        "2.0": {
+          "0.0": 77132
+        }
+      }
+    }
+  },
+  "overlap": {
+    "Cell_Phones_and_Accessories.csv \u2229 Clothing_Shoes_and_Jewelry.csv": {
+      "intersection_triples": 17,
+      "pct_of_a": 0.012,
+      "pct_of_b": 0.0003,
+      "len_a": 141945,
+      "len_b": 5504331
+    },
+    "Cell_Phones_and_Accessories.csv \u2229 Electronics.csv": {
+      "intersection_triples": 9711,
+      "pct_of_a": 6.8414,
+      "pct_of_b": 0.1282,
+      "len_a": 141945,
+      "len_b": 7574169
+    },
+    "Cell_Phones_and_Accessories.csv \u2229 Home_and_Kitchen.csv": {
+      "intersection_triples": 0,
+      "pct_of_a": 0.0,
+      "pct_of_b": 0.0,
+      "len_a": 141945,
+      "len_b": 3988482
+    },
+    "Cell_Phones_and_Accessories.csv \u2229 part.csv": {
+      "intersection_triples": 126,
+      "pct_of_a": 0.0888,
+      "pct_of_b": 0.1261,
+      "len_a": 141945,
+      "len_b": 99900
+    },
+    "Cell_Phones_and_Accessories.csv \u2229 separate.csv": {
+      "intersection_triples": 427,
+      "pct_of_a": 0.3008,
+      "pct_of_b": 0.0281,
+      "len_a": 141945,
+      "len_b": 1520951
+    },
+    "Cell_Phones_and_Accessories.csv \u2229 Sports_and_Outdoors.csv": {
+      "intersection_triples": 941,
+      "pct_of_a": 0.6629,
+      "pct_of_b": 0.0312,
+      "len_a": 141945,
+      "len_b": 3013256
+    },
+    "Cell_Phones_and_Accessories.csv \u2229 Toys_and_Games.csv": {
+      "intersection_triples": 1,
+      "pct_of_a": 0.0007,
+      "pct_of_b": 0.0001,
+      "len_a": 141945,
+      "len_b": 1997140
+    },
+    "Clothing_Shoes_and_Jewelry.csv \u2229 Electronics.csv": {
+      "intersection_triples": 5026,
+      "pct_of_a": 0.0913,
+      "pct_of_b": 0.0664,
+      "len_a": 5504331,
+      "len_b": 7574169
+    },
+    "Clothing_Shoes_and_Jewelry.csv \u2229 Home_and_Kitchen.csv": {
+      "intersection_triples": 1135,
+      "pct_of_a": 0.0206,
+      "pct_of_b": 0.0285,
+      "len_a": 5504331,
+      "len_b": 3988482
+    },
+    "Clothing_Shoes_and_Jewelry.csv \u2229 part.csv": {
+      "intersection_triples": 6736,
+      "pct_of_a": 0.1224,
+      "pct_of_b": 6.7427,
+      "len_a": 5504331,
+      "len_b": 99900
+    },
+    "Clothing_Shoes_and_Jewelry.csv \u2229 separate.csv": {
+      "intersection_triples": 25575,
+      "pct_of_a": 0.4646,
+      "pct_of_b": 1.6815,
+      "len_a": 5504331,
+      "len_b": 1520951
+    },
+    "Clothing_Shoes_and_Jewelry.csv \u2229 Sports_and_Outdoors.csv": {
+      "intersection_triples": 298296,
+      "pct_of_a": 5.4193,
+      "pct_of_b": 9.8995,
+      "len_a": 5504331,
+      "len_b": 3013256
+    },
+    "Clothing_Shoes_and_Jewelry.csv \u2229 Toys_and_Games.csv": {
+      "intersection_triples": 3576,
+      "pct_of_a": 0.065,
+      "pct_of_b": 0.1791,
+      "len_a": 5504331,
+      "len_b": 1997140
+    },
+    "Electronics.csv \u2229 Home_and_Kitchen.csv": {
+      "intersection_triples": 63,
+      "pct_of_a": 0.0008,
+      "pct_of_b": 0.0016,
+      "len_a": 7574169,
+      "len_b": 3988482
+    },
+    "Electronics.csv \u2229 part.csv": {
+      "intersection_triples": 3551,
+      "pct_of_a": 0.0469,
+      "pct_of_b": 3.5546,
+      "len_a": 7574169,
+      "len_b": 99900
+    },
+    "Electronics.csv \u2229 separate.csv": {
+      "intersection_triples": 11964,
+      "pct_of_a": 0.158,
+      "pct_of_b": 0.7866,
+      "len_a": 7574169,
+      "len_b": 1520951
+    },
+    "Electronics.csv \u2229 Sports_and_Outdoors.csv": {
+      "intersection_triples": 874,
+      "pct_of_a": 0.0115,
+      "pct_of_b": 0.029,
+      "len_a": 7574169,
+      "len_b": 3013256
+    },
+    "Electronics.csv \u2229 Toys_and_Games.csv": {
+      "intersection_triples": 202,
+      "pct_of_a": 0.0027,
+      "pct_of_b": 0.0101,
+      "len_a": 7574169,
+      "len_b": 1997140
+    },
+    "Home_and_Kitchen.csv \u2229 part.csv": {
+      "intersection_triples": 35,
+      "pct_of_a": 0.0009,
+      "pct_of_b": 0.035,
+      "len_a": 3988482,
+      "len_b": 99900
+    },
+    "Home_and_Kitchen.csv \u2229 separate.csv": {
+      "intersection_triples": 102,
+      "pct_of_a": 0.0026,
+      "pct_of_b": 0.0067,
+      "len_a": 3988482,
+      "len_b": 1520951
+    },
+    "Home_and_Kitchen.csv \u2229 Sports_and_Outdoors.csv": {
+      "intersection_triples": 687,
+      "pct_of_a": 0.0172,
+      "pct_of_b": 0.0228,
+      "len_a": 3988482,
+      "len_b": 3013256
+    },
+    "Home_and_Kitchen.csv \u2229 Toys_and_Games.csv": {
+      "intersection_triples": 89,
+      "pct_of_a": 0.0022,
+      "pct_of_b": 0.0045,
+      "len_a": 3988482,
+      "len_b": 1997140
+    },
+    "part.csv \u2229 separate.csv": {
+      "intersection_triples": 99900,
+      "pct_of_a": 100.0,
+      "pct_of_b": 6.5683,
+      "len_a": 99900,
+      "len_b": 1520951
+    },
+    "part.csv \u2229 Sports_and_Outdoors.csv": {
+      "intersection_triples": 3571,
+      "pct_of_a": 3.5746,
+      "pct_of_b": 0.1185,
+      "len_a": 99900,
+      "len_b": 3013256
+    },
+    "part.csv \u2229 Toys_and_Games.csv": {
+      "intersection_triples": 73,
+      "pct_of_a": 0.0731,
+      "pct_of_b": 0.0037,
+      "len_a": 99900,
+      "len_b": 1997140
+    },
+    "separate.csv \u2229 Sports_and_Outdoors.csv": {
+      "intersection_triples": 13020,
+      "pct_of_a": 0.856,
+      "pct_of_b": 0.4321,
+      "len_a": 1520951,
+      "len_b": 3013256
+    },
+    "separate.csv \u2229 Toys_and_Games.csv": {
+      "intersection_triples": 276,
+      "pct_of_a": 0.0181,
+      "pct_of_b": 0.0138,
+      "len_a": 1520951,
+      "len_b": 1997140
+    },
+    "Sports_and_Outdoors.csv \u2229 Toys_and_Games.csv": {
+      "intersection_triples": 1300,
+      "pct_of_a": 0.0431,
+      "pct_of_b": 0.0651,
+      "len_a": 3013256,
+      "len_b": 1997140
+    }
+  },
+  "target_rec": "**`class` is not a valid trust target.** It is (in the files where it exists) a recode of `overall`. A model predicting `class` from text/rating would be a **sentiment / polarity** model, not trust analytics. Reporting accuracy on `class` as 'trust detection' would be scientifically incorrect.\n\n`part.csv` label counts={'': 80190, '0.0': 19749}, overalls-with-mixed-labels=0 `separate.csv` label counts={'0': 1493221, '1': 31013}, overalls-with-mixed-labels=5\n\n**`label` is a different field from `class`.** Whether it is a reliable ground-truth for fake/spam/suspicious reviews cannot be proven from column names alone. If `label` was produced by a rule on `BehaviouralFeatureResult`, then predicting `label` from BFR is circular. Until provenance is documented, `label` may be used only with that caveat, and BFR should be excluded as features.\n\nObserved co-occurrence: `label` is **not** a simple threshold on `overall` (multiple ratings appear under both label values). That is necessary but not sufficient for a trust label.\n\n**Preferred ML objective given the evidence:** do **not** train a 'trust classifier' on `class`. If `label` can be documented as independent spam/fake ground truth, review-level classification of `label` is the only candidate supervised target. Otherwise the defensible project is **unsupervised / descriptive reviewer-behavior analytics** (aggregates, repetition, helpfulness, rating distributions) plus optional sentiment analysis clearly labeled as sentiment, not trust."
+}

@@ -1,0 +1,156 @@
+{
+  "track": 2,
+  "source": "separate.csv",
+  "part_csv_included": false,
+  "part_csv_reason": "part.csv is a subset of separate.csv and has no label=1 rows; not an independent dataset",
+  "rows_read": 1524234,
+  "rows_written_after_dedup": 1520951,
+  "duplicate_triples_dropped": 3283,
+  "candidate_label_counts": {
+    "0": 1489968,
+    "1": 30983,
+    "invalid_or_missing": 0
+  },
+  "positive_rate": 0.020370807475060013,
+  "class_by_label": {
+    "0.0|0": 123961,
+    "0.0|1": 2206,
+    "1.0|0": 71853,
+    "1.0|1": 1913,
+    "-1.0|0": 1294154,
+    "-1.0|1": 26864
+  },
+  "overall_by_label": {
+    "1.0|0": 391553,
+    "1.0|1": 7290,
+    "2.0|0": 237180,
+    "2.0|1": 4690,
+    "3.0|0": 361700,
+    "3.0|1": 5025,
+    "4.0|0": 124444,
+    "4.0|1": 3159,
+    "5.0|0": 375091,
+    "5.0|1": 10819
+  },
+  "bfr_means_by_label": {
+    "CS": {
+      "n_label0": 1489968,
+      "n_label1": 30983,
+      "mean_label0": 0.3195618360149374,
+      "mean_label1": 0.7497023279959745,
+      "mean_diff": 0.4301404919810371
+    },
+    "MNR": {
+      "n_label0": 1489968,
+      "n_label1": 30983,
+      "mean_label0": 0.3309353180506626,
+      "mean_label1": 0.990254247727152,
+      "mean_diff": 0.6593189296764894
+    },
+    "RB": {
+      "n_label0": 1489968,
+      "n_label1": 30983,
+      "mean_label0": 1.175705115814568,
+      "mean_label1": 6.356647193622309,
+      "mean_diff": 5.180942077807741
+    },
+    "RC": {
+      "n_label0": 1489968,
+      "n_label1": 30983,
+      "mean_label0": 9.248028145570911,
+      "mean_label1": 11.935513023270826,
+      "mean_diff": 2.687484877699914
+    },
+    "PR": {
+      "n_label0": 1489968,
+      "n_label1": 30983,
+      "mean_label0": 54.801114506896894,
+      "mean_label1": 65.64656300649631,
+      "mean_diff": 10.845448499599414
+    },
+    "NR": {
+      "n_label0": 1489968,
+      "n_label1": 30983,
+      "mean_label0": 12.210268790895489,
+      "mean_label1": 30.692704749054165,
+      "mean_diff": 18.482435958158675
+    },
+    "FR": {
+      "n_label0": 1489968,
+      "n_label1": 30983,
+      "mean_label0": 0.09387346817352205,
+      "mean_label1": 0.21973455051959825,
+      "mean_diff": 0.1258610823460762
+    },
+    "RSP": {
+      "n_label0": 1489968,
+      "n_label1": 30983,
+      "mean_label0": 0.258390113076254,
+      "mean_label1": 0.3712035632443598,
+      "mean_diff": 0.11281345016810584
+    },
+    "AW": {
+      "n_label0": 1489968,
+      "n_label1": 30983,
+      "mean_label0": 523.8486833274271,
+      "mean_label1": 181.49920924377884,
+      "mean_diff": -342.34947408364826
+    },
+    "RD": {
+      "n_label0": 1489968,
+      "n_label1": 30983,
+      "mean_label0": 1.3883089408867302,
+      "mean_label1": 1.2805402632166145,
+      "mean_diff": -0.10776867767011566
+    },
+    "RL": {
+      "n_label0": 1489968,
+      "n_label1": 30983,
+      "mean_label0": 380.4341851637082,
+      "mean_label1": 324.12158280347285,
+      "mean_diff": -56.31260236023536
+    },
+    "ER": {
+      "n_label0": 1489968,
+      "n_label1": 30983,
+      "mean_label0": 0.5145372249605361,
+      "mean_label1": 0.5844818126069135,
+      "mean_diff": 0.06994458764637734
+    },
+    "PC": {
+      "n_label0": 1489968,
+      "n_label1": 30983,
+      "mean_label0": 2.3667239871504666,
+      "mean_label1": 2.6198862673634884,
+      "mean_diff": 0.2531622802130218
+    }
+  },
+  "univariate_auc_vs_candidate_label": {
+    "overall": 0.5499680685498537,
+    "bfr_CS": 0.8644617841050878,
+    "bfr_MNR": 0.8587991630522432,
+    "bfr_RB": 0.8040498131798965,
+    "bfr_RC": 0.5672948097071386,
+    "bfr_PR": 0.5853519666168828,
+    "bfr_NR": 0.6219453661092975,
+    "bfr_FR": 0.6085024747805982,
+    "bfr_RSP": 0.5535110360983369,
+    "bfr_AW": 0.42506846700479006,
+    "bfr_RD": 0.4665745819296163,
+    "bfr_RL": 0.4542890616269083,
+    "bfr_ER": 0.5339207315012274,
+    "bfr_PC": 0.5095360327401209
+  },
+  "ml_ready_excludes": [
+    "BehaviouralFeatureResult and all bfr_* columns",
+    "class_raw / class_missing",
+    "reviewerName",
+    "mongo_id",
+    "row_key_hash"
+  ],
+  "target_name": "candidate_label",
+  "target_status": "UNVERIFIED candidate; not confirmed trust ground truth",
+  "elapsed_sec": 135.18,
+  "analysis_parquet": "D:\\Trust_Analytics_System\\dataset\\cleaned\\candidate_label\\reviews_analysis.parquet",
+  "ml_ready_parquet": "D:\\Trust_Analytics_System\\dataset\\cleaned\\candidate_label\\ml_ready.parquet"
+}

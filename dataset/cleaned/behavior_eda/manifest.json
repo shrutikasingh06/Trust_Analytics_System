@@ -1,0 +1,58 @@
+{
+  "track": 1,
+  "generated_at": "2026-08-18T03:57:25.542080+00:00",
+  "input_parquet": "D:\\Trust_Analytics_System\\dataset\\cleaned\\behavior_eda\\reviews_combined_dedup.parquet",
+  "output_parquet": "D:\\Trust_Analytics_System\\dataset\\cleaned\\behavior_eda\\reviewers.parquet",
+  "n_input_rows": 21897475,
+  "n_reviewer_rows": 8789960,
+  "columns_produced": [
+    "reviewerID",
+    "review_count",
+    "unique_products",
+    "unique_categories",
+    "avg_rating",
+    "rating_std",
+    "rating_min",
+    "rating_max",
+    "rating_range",
+    "review_text_count",
+    "avg_review_length",
+    "median_review_length",
+    "helpful_votes_total",
+    "first_review_unix",
+    "last_review_unix",
+    "first_review_time",
+    "last_review_time",
+    "review_span_days"
+  ],
+  "source_columns_used": [
+    "reviewerID",
+    "asin",
+    "category",
+    "overall",
+    "text_length",
+    "text_missing",
+    "helpful_votes",
+    "unixReviewTime",
+    "review_datetime_utc"
+  ],
+  "unavailable_columns": [
+    "verified_purchase_count \u2014 no verified-purchase column exists on the source parquet"
+  ],
+  "execution_time_sec": 191.89,
+  "method": "DuckDB read_parquet + GROUP BY reviewerID with memory_limit=3GB and temp_directory spill; COPY to parquet. Did not load the combined file into pandas. Did not regenerate category or combined parquet files.",
+  "notes": [
+    "rating_std is sample standard deviation (STDDEV_SAMP); NULL when a reviewer has a single review.",
+    "review_text_count counts rows with text_missing = 0.",
+    "verified_purchase_count was not created because the source has no such field.",
+    "Existing reviews_by_category/*.parquet and reviews_combined_dedup.parquet were left in place."
+  ],
+  "null_and_validity_checks": {
+    "null_reviewerID": 0,
+    "bad_review_count": 0,
+    "null_unique_products": 0,
+    "null_avg_rating": 0,
+    "null_rating_std": 5168404,
+    "negative_span": 0
+  }
+}

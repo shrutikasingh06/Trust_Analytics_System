@@ -46,11 +46,14 @@ test-results/
 *.tmp
 *.temp
 
-# Large datasets
+# Large datasets — never commit raw CSVs or cleaned parquet
 data/raw/
 data/cache/
 dataset/raw/
 dataset/processed/
+dataset/csv_files/
+dataset/cleaned/**/*.parquet
+dataset/cleaned/audit_partial.json
 
 # Python build files
 *.egg-info/

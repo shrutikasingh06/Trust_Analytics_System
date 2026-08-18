@@ -1,0 +1,2650 @@
+[
+  {
+    "file_name": "Cell_Phones_and_Accessories.csv",
+    "file_size_bytes": 85841761,
+    "file_size_human": "81.87 MB",
+    "n_rows": 141945,
+    "n_columns": 12,
+    "columns": [
+      "_id",
+      "reviewerID",
+      "asin",
+      "reviewerName",
+      "helpful",
+      "reviewText",
+      "overall",
+      "summary",
+      "unixReviewTime",
+      "reviewTime",
+      "category",
+      "class"
+    ],
+    "newline_count": 141948,
+    "expected_data_lines_if_one_record_per_line": 141947,
+    "line_count_minus_parsed_rows": 2,
+    "missing": {
+      "_id": {
+        "missing": 0,
+        "pct": 0.0
+      },
+      "reviewerID": {
+        "missing": 0,
+        "pct": 0.0
+      },
+      "asin": {
+        "missing": 0,
+        "pct": 0.0
+      },
+      "reviewerName": {
+        "missing": 951,
+        "pct": 0.67
+      },
+      "helpful": {
+        "missing": 0,
+        "pct": 0.0
+      },
+      "reviewText": {
+        "missing": 0,
+        "pct": 0.0
+      },
+      "overall": {
+        "missing": 0,
+        "pct": 0.0
+      },
+      "summary": {
+        "missing": 9,
+        "pct": 0.0063
+      },
+      "unixReviewTime": {
+        "missing": 0,
+        "pct": 0.0
+      },
+      "reviewTime": {
+        "missing": 0,
+        "pct": 0.0
+      },
+      "category": {
+        "missing": 0,
+        "pct": 0.0
+      },
+      "class": {
+        "missing": 0,
+        "pct": 0.0
+      }
+    },
+    "empty_rows_all_fields": 0,
+    "numeric_stats": {
+      "overall": {
+        "min": 1.0,
+        "max": 5.0,
+        "sum": 523762.0,
+        "sumsq": 2255700.0,
+        "n": 141945,
+        "non_numeric": 0,
+        "mean": 3.689893973017718,
+        "std": 1.5086579606350226
+      },
+      "unixReviewTime": {
+        "min": 942796800.0,
+        "max": 1406073600.0,
+        "sum": 180113767171200.0,
+        "sumsq": 2.2962625346966397e+23,
+        "n": 141945,
+        "non_numeric": 0,
+        "mean": 1268898285.7529325,
+        "std": 87235379.18787657
+      },
+      "class": {
+        "min": 0.0,
+        "max": 1.0,
+        "sum": 93275.0,
+        "sumsq": 93275.0,
+        "n": 141945,
+        "non_numeric": 0,
+        "mean": 0.6571207157701927,
+        "std": 0.47467155031227887
+      }
+    },
+    "low_cardinality_value_counts": {
+      "overall": {
+        "5.0": 63581,
+        "4.0": 29694,
+        "1.0": 23843,
+        "3.0": 13584,
+        "2.0": 11243
+      },
+      "category": {
+        "Cell_Phones_and_Accessories": 141945
+      },
+      "class": {
+        "1.0": 93275,
+        "0.0": 48670
+      }
+    },
+    "class_counts": {
+      "1.0": 93275,
+      "0.0": 48670
+    },
+    "label_counts": {},
+    "class_by_overall": {
+      "5.0 | 1.0": 63581,
+      "4.0 | 1.0": 29694,
+      "1.0 | 0.0": 23843,
+      "3.0 | 0.0": 13584,
+      "2.0 | 0.0": 11243
+    },
+    "label_by_overall": {},
+    "label_by_class": {},
+    "review_text": {
+      "n": 141945,
+      "min": 2,
+      "max": 18744,
+      "sum": 60900861,
+      "empty": 0,
+      "very_short_lt5": 24,
+      "very_long_gt5000": 222,
+      "whitespace_only": 0,
+      "mean": 429.0454824051569
+    },
+    "summary_empty": 9,
+    "summary_n": 141936,
+    "helpful_status": {
+      "missing": 0,
+      "ok": 141945,
+      "unparseable": 0,
+      "negative": 0,
+      "helpful_gt_total": 0,
+      "non_integer": 0
+    },
+    "helpful_means": {
+      "n_parsed": 141945,
+      "mean_helpful_votes": 1.7920109901722499,
+      "mean_total_votes": 2.2539504737750535
+    },
+    "bfr_status": {},
+    "bfr_keys_observed": {},
+    "bfr_numeric": {
+      "CS": {
+        "min": null,
+        "max": null,
+        "n": 0,
+        "sum": 0.0
+      },
+      "MNR": {
+        "min": null,
+        "max": null,
+        "n": 0,
+        "sum": 0.0
+      },
+      "RB": {
+        "min": null,
+        "max": null,
+        "n": 0,
+        "sum": 0.0
+      },
+      "RC": {
+        "min": null,
+        "max": null,
+        "n": 0,
+        "sum": 0.0
+      },
+      "PR": {
+        "min": null,
+        "max": null,
+        "n": 0,
+        "sum": 0.0
+      },
+      "NR": {
+        "min": null,
+        "max": null,
+        "n": 0,
+        "sum": 0.0
+      },
+      "FR": {
+        "min": null,
+        "max": null,
+        "n": 0,
+        "sum": 0.0
+      },
+      "RSP": {
+        "min": null,
+        "max": null,
+        "n": 0,
+        "sum": 0.0
+      },
+      "AW": {
+        "min": null,
+        "max": null,
+        "n": 0,
+        "sum": 0.0
+      },
+      "RD": {
+        "min": null,
+        "max": null,
+        "n": 0,
+        "sum": 0.0
+      },
+      "RL": {
+        "min": null,
+        "max": null,
+        "n": 0,
+        "sum": 0.0
+      },
+      "ER": {
+        "min": null,
+        "max": null,
+        "n": 0,
+        "sum": 0.0
+      },
+      "PC": {
+        "min": null,
+        "max": null,
+        "n": 0,
+        "sum": 0.0
+      }
+    },
+    "bfr_fully_parsed_n": 0,
+    "unique_counts": {
+      "reviewerID": 129464,
+      "asin": 13788,
+      "_id": 141945,
+      "row_hash": 141945,
+      "id_triple": 141945,
+      "id_text": 141945
+    },
+    "unique_overflow": {
+      "reviewerID": false,
+      "asin": false,
+      "_id": false,
+      "row_hash": false,
+      "id_triple": false,
+      "id_text": false
+    },
+    "duplicate_extra_row_hash_hits": 0,
+    "duplicate_extra_id_hits": 0,
+    "duplicate_extra_triple_hits": 0,
+    "duplicate_extra_reviewer_asin_text_hits": 0,
+    "id_format": {
+      "mongo_oid_like": 141945,
+      "plain_or_other": 0
+    },
+    "overall_not_1_to_5": 0,
+    "overall_non_integer": 0,
+    "unix_minmax": [
+      942796800.0,
+      1406073600.0
+    ],
+    "unix_readable": {
+      "min_iso": "1999-11-17T00:00:00+00:00",
+      "max_iso": "2014-07-23T00:00:00+00:00"
+    },
+    "unix_implausible_or_non_numeric_extra": 0,
+    "reviewtime_unparseable": 0,
+    "unix_vs_reviewtime_date_mismatches": 0,
+    "encoding_replacement_char_rows": 0,
+    "sample_head": [
+      {
+        "_id": "{'$oid': '5a1321d5741a2384e802c552'}",
+        "reviewerID": "A3HVRXV0LVJN7",
+        "asin": "0110400550",
+        "reviewerName": "BiancaNicole",
+        "helpful": "[4, 4]",
+        "reviewText": "Best phone case ever . Everywhere I go I get a ton of compliments on it. It was in perfect condition as well.",
+        "overall": "5.0",
+        "summary": "A++++",
+        "unixReviewTime": "1358035200",
+        "reviewTime": "01 13, 2013",
+        "category": "Cell_Phones_and_Accessories",
+        "class": "1.0"
+      },
+      {
+        "_id": "{'$oid': '5a1321d5741a2384e802c557'}",
+        "reviewerID": "A1BJGDS0L1IO6I",
+        "asin": "0110400550",
+        "reviewerName": "cf \"t\"",
+        "helpful": "[0, 3]",
+        "reviewText": "ITEM NOT SENT from Blue Top Company in Hong Kong and it's been over two months!  I will report this.  DO NOT use this company.  Not happy at all!",
+        "overall": "1.0",
+        "summary": "ITEM NOT SENT!!",
+        "unixReviewTime": "1359504000",
+        "reviewTime": "01 30, 2013",
+        "category": "Cell_Phones_and_Accessories",
+        "class": "0.0"
+      }
+    ],
+    "elapsed_sec": 3.62,
+    "triple_overflow": false,
+    "n_chunks": 1,
+    "parse_warnings_note": "C engine on_bad_lines=warn; compare newline delta for malformed multiline text"
+  },
+  {
+    "file_name": "Clothing_Shoes_and_Jewelry.csv",
+    "file_size_bytes": 2434161361,
+    "file_size_human": "2.27 GB",
+    "n_rows": 5504331,
+    "n_columns": 12,
+    "columns": [
+      "_id",
+      "reviewerID",
+      "asin",
+      "reviewerName",
+      "helpful",
+      "reviewText",
+      "overall",
+      "summary",
+      "unixReviewTime",
+      "reviewTime",
+      "category",
+      "class"
+    ],
+    "newline_count": 5504384,
+    "expected_data_lines_if_one_record_per_line": 5504383,
+    "line_count_minus_parsed_rows": 52,
+    "missing": {
+      "_id": {
+        "missing": 0,
+        "pct": 0.0
+      },
+      "reviewerID": {
+        "missing": 0,
+        "pct": 0.0
+      },
+      "asin": {
+        "missing": 0,
+        "pct": 0.0
+      },
+      "reviewerName": {
+        "missing": 13856,
+        "pct": 0.2517
+      },
+      "helpful": {
+        "missing": 0,
+        "pct": 0.0
+      },
+      "reviewText": {
+        "missing": 10,
+        "pct": 0.0002
+      },
+      "overall": {
+        "missing": 0,
+        "pct": 0.0
+      },
+      "summary": {
+        "missing": 72,
+        "pct": 0.0013
+      },
+      "unixReviewTime": {
+        "missing": 0,
+        "pct": 0.0
+      },
+      "reviewTime": {
+        "missing": 0,
+        "pct": 0.0
+      },
+      "category": {
+        "missing": 0,
+        "pct": 0.0
+      },
+      "class": {
+        "missing": 0,
+        "pct": 0.0
+      }
+    },
+    "empty_rows_all_fields": 0,
+    "numeric_stats": {
+      "overall": {
+        "min": 1.0,
+        "max": 5.0,
+        "sum": 23072150.0,
+        "sumsq": 104652680.0,
+        "n": 5504331,
+        "non_numeric": 0,
+        "mean": 4.191635641097892,
+        "std": 1.2012405861085584
+      },
+      "unixReviewTime": {
+        "min": 939254400.0,
+        "max": 1406073600.0,
+        "sum": 7510676425056000.0,
+        "sumsq": 1.025868584441934e+25,
+        "n": 5504331,
+        "non_numeric": 0,
+        "mean": 1364503047.7011647,
+        "std": 43352324.77256462
+      },
+      "class": {
+        "min": 0.0,
+        "max": 1.0,
+        "sum": 4334882.0,
+        "sumsq": 4334882.0,
+        "n": 5504331,
+        "non_numeric": 0,
+        "mean": 0.7875402115170763,
+        "std": 0.40904844060418444
+      }
+    },
+    "low_cardinality_value_counts": {
+      "overall": {
+        "5.0": 3236871,
+        "4.0": 1098011,
+        "3.0": 507187,
+        "1.0": 350334,
+        "2.0": 311928
+      },
+      "category": {
+        "Clothing_Shoes_and_Jewelry": 5504331
+      },
+      "class": {
+        "1.0": 4334882,
+        "0.0": 1169449
+      }
+    },
+    "class_counts": {
+      "1.0": 4334882,
+      "0.0": 1169449
+    },
+    "label_counts": {},
+    "class_by_overall": {
+      "5.0 | 1.0": 3236871,
+      "4.0 | 1.0": 1098011,
+      "3.0 | 0.0": 507187,
+      "1.0 | 0.0": 350334,
+      "2.0 | 0.0": 311928
+    },
+    "label_by_overall": {},
+    "label_by_class": {},
+    "review_text": {
+      "n": 5504321,
+      "min": 1,
+      "max": 26825,
+      "sum": 1504621868,
+      "empty": 10,
+      "very_short_lt5": 2098,
+      "very_long_gt5000": 813,
+      "whitespace_only": 0,
+      "mean": 273.3528564195293
+    },
+    "summary_empty": 72,
+    "summary_n": 5504259,
+    "helpful_status": {
+      "missing": 0,
+      "ok": 5504331,
+      "unparseable": 0,
+      "negative": 0,
+      "helpful_gt_total": 1,
+      "non_integer": 0
+    },
+    "helpful_means": {
+      "n_parsed": 5504331,
+      "mean_helpful_votes": 0.9050411394227563,
+      "mean_total_votes": 1.097283030399153
+    },
+    "bfr_status": {},
+    "bfr_keys_observed": {},
+    "bfr_numeric": {
+      "CS": {
+        "min": null,
+        "max": null,
+        "n": 0,
+        "sum": 0.0
+      },
+      "MNR": {
+        "min": null,
+        "max": null,
+        "n": 0,
+        "sum": 0.0
+      },
+      "RB": {
+        "min": null,
+        "max": null,
+        "n": 0,
+        "sum": 0.0
+      },
+      "RC": {
+        "min": null,
+        "max": null,
+        "n": 0,
+        "sum": 0.0
+      },
+      "PR": {
+        "min": null,
+        "max": null,
+        "n": 0,
+        "sum": 0.0
+      },
+      "NR": {
+        "min": null,
+        "max": null,
+        "n": 0,
+        "sum": 0.0
+      },
+      "FR": {
+        "min": null,
+        "max": null,
+        "n": 0,
+        "sum": 0.0
+      },
+      "RSP": {
+        "min": null,
+        "max": null,
+        "n": 0,
+        "sum": 0.0
+      },
+      "AW": {
+        "min": null,
+        "max": null,
+        "n": 0,
+        "sum": 0.0
+      },
+      "RD": {
+        "min": null,
+        "max": null,
+        "n": 0,
+        "sum": 0.0
+      },
+      "RL": {
+        "min": null,
+        "max": null,
+        "n": 0,
+        "sum": 0.0
+      },
+      "ER": {
+        "min": null,
+        "max": null,
+        "n": 0,
+        "sum": 0.0
+      },
+      "PC": {
+        "min": null,
+        "max": null,
+        "n": 0,
+        "sum": 0.0
+      }
+    },
+    "bfr_fully_parsed_n": 0,
+    "unique_counts": {
+      "reviewerID": 3023121,
+      "asin": 1108410,
+      "_id": 5504331,
+      "row_hash": 5504331,
+      "id_triple": 5504331,
+      "id_text": 5504331
+    },
+    "unique_overflow": {
+      "reviewerID": false,
+      "asin": false,
+      "_id": false,
+      "row_hash": false,
+      "id_triple": false,
+      "id_text": false
+    },
+    "duplicate_extra_row_hash_hits": 0,
+    "duplicate_extra_id_hits": 0,
+    "duplicate_extra_triple_hits": 0,
+    "duplicate_extra_reviewer_asin_text_hits": 0,
+    "id_format": {
+      "mongo_oid_like": 5504331,
+      "plain_or_other": 0
+    },
+    "overall_not_1_to_5": 0,
+    "overall_non_integer": 0,
+    "unix_minmax": [
+      939254400.0,
+      1406073600.0
+    ],
+    "unix_readable": {
+      "min_iso": "1999-10-07T00:00:00+00:00",
+      "max_iso": "2014-07-23T00:00:00+00:00"
+    },
+    "unix_implausible_or_non_numeric_extra": 0,
+    "reviewtime_unparseable": 0,
+    "unix_vs_reviewtime_date_mismatches": 0,
+    "encoding_replacement_char_rows": 0,
+    "sample_head": [
+      {
+        "_id": "{'$oid': '5a132293741a2384e8376cbc'}",
+        "reviewerID": "A19PBP93OF896",
+        "asin": "0000031887",
+        "reviewerName": "Alinna Satake \"Can't Stop Eating\"",
+        "helpful": "[0, 1]",
+        "reviewText": "My 3-yr-old daughter received this as a gift for her birthday.  She's no pixy, but she's not huge either, and it was VERY tight on her, so I doubt a 6 year old can fit it comfortably.  The tutu fell apart after 12 hours -- the satin waistband detached from the tulle.  Unless twirling counts as rough wear, I'd say this was poorly constructed.  I sent two messages to Sydney So Sweet directly, trying to get a replacement or at least some kind of acknowledgement and NOTHING.  So ... crappy construction and crappy customer service.  I already don't like tutu/fairy/princess stuff, and this just furthers my opinion that companies like this are preying on daughters.  Boo!",
+        "overall": "1.0",
+        "summary": "Tiny and Poorly Constructed!",
+        "unixReviewTime": "1363824000",
+        "reviewTime": "03 21, 2013",
+        "category": "Clothing_Shoes_and_Jewelry",
+        "class": "0.0"
+      },
+      {
+        "_id": "{'$oid': '5a132293741a2384e8376cb9'}",
+        "reviewerID": "A2G0LNLN79Q6HR",
+        "asin": "0000031887",
+        "reviewerName": "aj_18 \"Aj_18\"",
+        "helpful": "[1, 1]",
+        "reviewText": "This was a really cute tutu the only problem is that it was super short on my 5 yr old daughter. Other than that it was really adorable.",
+        "overall": "4.0",
+        "summary": "Really Cute but rather short.",
+        "unixReviewTime": "1337990400",
+        "reviewTime": "05 26, 2012",
+        "category": "Clothing_Shoes_and_Jewelry",
+        "class": "1.0"
+      }
+    ],
+    "elapsed_sec": 179.19,
+    "triple_overflow": false,
+    "n_chunks": 28,
+    "parse_warnings_note": "C engine on_bad_lines=warn; compare newline delta for malformed multiline text"
+  },
+  {
+    "file_name": "Electronics.csv",
+    "file_size_bytes": 4693142520,
+    "file_size_human": "4.37 GB",
+    "n_rows": 7574169,
+    "n_columns": 12,
+    "columns": [
+      "_id",
+      "reviewerID",
+      "asin",
+      "reviewerName",
+      "helpful",
+      "reviewText",
+      "overall",
+      "summary",
+      "unixReviewTime",
+      "reviewTime",
+      "category",
+      "class"
+    ],
+    "newline_count": 7574297,
+    "expected_data_lines_if_one_record_per_line": 7574296,
+    "line_count_minus_parsed_rows": 127,
+    "missing": {
+      "_id": {
+        "missing": 0,
+        "pct": 0.0
+      },
+      "reviewerID": {
+        "missing": 0,
+        "pct": 0.0
+      },
+      "asin": {
+        "missing": 0,
+        "pct": 0.0
+      },
+      "reviewerName": {
+        "missing": 96883,
+        "pct": 1.2791
+      },
+      "helpful": {
+        "missing": 0,
+        "pct": 0.0
+      },
+      "reviewText": {
+        "missing": 3,
+        "pct": 0.0
+      },
+      "overall": {
+        "missing": 0,
+        "pct": 0.0
+      },
+      "summary": {
+        "missing": 136,
+        "pct": 0.0018
+      },
+      "unixReviewTime": {
+        "missing": 0,
+        "pct": 0.0
+      },
+      "reviewTime": {
+        "missing": 0,
+        "pct": 0.0
+      },
+      "category": {
+        "missing": 0,
+        "pct": 0.0
+      },
+      "class": {
+        "missing": 0,
+        "pct": 0.0
+      }
+    },
+    "empty_rows_all_fields": 0,
+    "numeric_stats": {
+      "overall": {
+        "min": 1.0,
+        "max": 5.0,
+        "sum": 30691092.0,
+        "sumsq": 138309550.0,
+        "n": 7574169,
+        "non_numeric": 0,
+        "mean": 4.052073831465868,
+        "std": 1.3569772971197431
+      },
+      "unixReviewTime": {
+        "min": 912729600.0,
+        "max": 1406073600.0,
+        "sum": 1.0136061782928e+16,
+        "sumsq": 1.3600510054477898e+25,
+        "n": 7574169,
+        "non_numeric": 0,
+        "mean": 1338240773.7308211,
+        "std": 68960067.19521923
+      },
+      "class": {
+        "min": 0.0,
+        "max": 1.0,
+        "sum": 5751275.0,
+        "sumsq": 5751275.0,
+        "n": 7574169,
+        "non_numeric": 0,
+        "mean": 0.7593275249073529,
+        "std": 0.42749179503871915
+      }
+    },
+    "low_cardinality_value_counts": {
+      "overall": {
+        "5.0": 4286308,
+        "4.0": 1464967,
+        "1.0": 825661,
+        "3.0": 579557,
+        "2.0": 417676
+      },
+      "category": {
+        "Electronics": 7574169
+      },
+      "class": {
+        "1.0": 5751275,
+        "0.0": 1822894
+      }
+    },
+    "class_counts": {
+      "1.0": 5751275,
+      "0.0": 1822894
+    },
+    "label_counts": {},
+    "class_by_overall": {
+      "5.0 | 1.0": 4286308,
+      "4.0 | 1.0": 1464967,
+      "1.0 | 0.0": 825661,
+      "3.0 | 0.0": 579557,
+      "2.0 | 0.0": 417676
+    },
+    "label_by_overall": {},
+    "label_by_class": {},
+    "review_text": {
+      "n": 7574166,
+      "min": 1,
+      "max": 32703,
+      "sum": 3491977497,
+      "empty": 3,
+      "very_short_lt5": 1550,
+      "very_long_gt5000": 19508,
+      "whitespace_only": 0,
+      "mean": 461.03788813184184
+    },
+    "summary_empty": 136,
+    "summary_n": 7574033,
+    "helpful_status": {
+      "missing": 0,
+      "ok": 7574169,
+      "unparseable": 0,
+      "negative": 0,
+      "helpful_gt_total": 0,
+      "non_integer": 0
+    },
+    "helpful_means": {
+      "n_parsed": 7574169,
+      "mean_helpful_votes": 2.0579276749700197,
+      "mean_total_votes": 2.625467955626551
+    },
+    "bfr_status": {},
+    "bfr_keys_observed": {},
+    "bfr_numeric": {
+      "CS": {
+        "min": null,
+        "max": null,
+        "n": 0,
+        "sum": 0.0
+      },
+      "MNR": {
+        "min": null,
+        "max": null,
+        "n": 0,
+        "sum": 0.0
+      },
+      "RB": {
+        "min": null,
+        "max": null,
+        "n": 0,
+        "sum": 0.0
+      },
+      "RC": {
+        "min": null,
+        "max": null,
+        "n": 0,
+        "sum": 0.0
+      },
+      "PR": {
+        "min": null,
+        "max": null,
+        "n": 0,
+        "sum": 0.0
+      },
+      "NR": {
+        "min": null,
+        "max": null,
+        "n": 0,
+        "sum": 0.0
+      },
+      "FR": {
+        "min": null,
+        "max": null,
+        "n": 0,
+        "sum": 0.0
+      },
+      "RSP": {
+        "min": null,
+        "max": null,
+        "n": 0,
+        "sum": 0.0
+      },
+      "AW": {
+        "min": null,
+        "max": null,
+        "n": 0,
+        "sum": 0.0
+      },
+      "RD": {
+        "min": null,
+        "max": null,
+        "n": 0,
+        "sum": 0.0
+      },
+      "RL": {
+        "min": null,
+        "max": null,
+        "n": 0,
+        "sum": 0.0
+      },
+      "ER": {
+        "min": null,
+        "max": null,
+        "n": 0,
+        "sum": 0.0
+      },
+      "PC": {
+        "min": null,
+        "max": null,
+        "n": 0,
+        "sum": 0.0
+      }
+    },
+    "bfr_fully_parsed_n": 0,
+    "unique_counts": {
+      "reviewerID": 4099875,
+      "asin": 469616,
+      "_id": 7574169,
+      "row_hash": 7574169,
+      "id_triple": 7574169,
+      "id_text": 7574169
+    },
+    "unique_overflow": {
+      "reviewerID": false,
+      "asin": false,
+      "_id": false,
+      "row_hash": false,
+      "id_triple": false,
+      "id_text": false
+    },
+    "duplicate_extra_row_hash_hits": 0,
+    "duplicate_extra_id_hits": 0,
+    "duplicate_extra_triple_hits": 0,
+    "duplicate_extra_reviewer_asin_text_hits": 0,
+    "id_format": {
+      "mongo_oid_like": 7574169,
+      "plain_or_other": 0
+    },
+    "overall_not_1_to_5": 0,
+    "overall_non_integer": 0,
+    "unix_minmax": [
+      912729600.0,
+      1406073600.0
+    ],
+    "unix_readable": {
+      "min_iso": "1998-12-04T00:00:00+00:00",
+      "max_iso": "2014-07-23T00:00:00+00:00"
+    },
+    "unix_implausible_or_non_numeric_extra": 0,
+    "reviewtime_unparseable": 0,
+    "unix_vs_reviewtime_date_mismatches": 0,
+    "encoding_replacement_char_rows": 0,
+    "sample_head": [
+      {
+        "_id": "{'$oid': '5a13242d741a2384e88f3c11'}",
+        "reviewerID": "A2WNBOD3WNDNKT",
+        "asin": "0439886341",
+        "reviewerName": "JAL",
+        "helpful": "[1, 1]",
+        "reviewText": "Some of the functions did not work properly.  My daughter bought this with her own money and was disappointed that it did not function as advertised.",
+        "overall": "3.0",
+        "summary": "Disappointing",
+        "unixReviewTime": "1374451200",
+        "reviewTime": "07 22, 2013",
+        "category": "Electronics",
+        "class": "0.0"
+      },
+      {
+        "_id": "{'$oid': '5a13242d741a2384e88f3c0f'}",
+        "reviewerID": "AKM1MP6P0OYPR",
+        "asin": "0132793040",
+        "reviewerName": "Vicki Gibson \"momo4\"",
+        "helpful": "[1, 1]",
+        "reviewText": "Corey Barker does a great job of explaining Blend Modes in this DVD. All of the Kelby training videos are great but pricey to buy individually. If you really want bang for your buck just subscribe to Kelby Training online.",
+        "overall": "5.0",
+        "summary": "Very thorough",
+        "unixReviewTime": "1365811200",
+        "reviewTime": "04 13, 2013",
+        "category": "Electronics",
+        "class": "1.0"
+      }
+    ],
+    "elapsed_sec": 525.16,
+    "triple_overflow": false,
+    "n_chunks": 38,
+    "parse_warnings_note": "C engine on_bad_lines=warn; compare newline delta for malformed multiline text"
+  },
+  {
+    "file_name": "Home_and_Kitchen.csv",
+    "file_size_bytes": 2127656408,
+    "file_size_human": "1.98 GB",
+    "n_rows": 3988482,
+    "n_columns": 12,
+    "columns": [
+      "_id",
+      "reviewerID",
+      "asin",
+      "reviewerName",
+      "helpful",
+      "reviewText",
+      "overall",
+      "summary",
+      "unixReviewTime",
+      "reviewTime",
+      "category",
+      "class"
+    ],
+    "newline_count": 3988553,
+    "expected_data_lines_if_one_record_per_line": 3988552,
+    "line_count_minus_parsed_rows": 70,
+    "missing": {
+      "_id": {
+        "missing": 0,
+        "pct": 0.0
+      },
+      "reviewerID": {
+        "missing": 0,
+        "pct": 0.0
+      },
+      "asin": {
+        "missing": 0,
+        "pct": 0.0
+      },
+      "reviewerName": {
+        "missing": 31838,
+        "pct": 0.7982
+      },
+      "helpful": {
+        "missing": 0,
+        "pct": 0.0
+      },
+      "reviewText": {
+        "missing": 4,
+        "pct": 0.0001
+      },
+      "overall": {
+        "missing": 0,
+        "pct": 0.0
+      },
+      "summary": {
+        "missing": 44,
+        "pct": 0.0011
+      },
+      "unixReviewTime": {
+        "missing": 0,
+        "pct": 0.0
+      },
+      "reviewTime": {
+        "missing": 0,
+        "pct": 0.0
+      },
+      "category": {
+        "missing": 0,
+        "pct": 0.0
+      },
+      "class": {
+        "missing": 0,
+        "pct": 0.0
+      }
+    },
+    "empty_rows_all_fields": 0,
+    "numeric_stats": {
+      "overall": {
+        "min": 1.0,
+        "max": 5.0,
+        "sum": 16691558.0,
+        "sumsq": 76315644.0,
+        "n": 3988482,
+        "non_numeric": 0,
+        "mean": 4.184940034830293,
+        "std": 1.2729038766178407
+      },
+      "unixReviewTime": {
+        "min": 943142400.0,
+        "max": 1406073600.0,
+        "sum": 5370574015180800.0,
+        "sumsq": 7.247908756839838e+24,
+        "n": 3988482,
+        "non_numeric": 0,
+        "mean": 1346520810.4689453,
+        "std": 63965240.03372782
+      },
+      "class": {
+        "min": 0.0,
+        "max": 1.0,
+        "sum": 3165285.0,
+        "sumsq": 3165285.0,
+        "n": 3988482,
+        "non_numeric": 0,
+        "mean": 0.7936064397432406,
+        "std": 0.40471626918286696
+      }
+    },
+    "low_cardinality_value_counts": {
+      "overall": {
+        "5.0": 2443404,
+        "4.0": 721881,
+        "1.0": 342280,
+        "3.0": 282900,
+        "2.0": 198017
+      },
+      "category": {
+        "Home_and_Kitchen": 3988482
+      },
+      "class": {
+        "1.0": 3165285,
+        "0.0": 823197
+      }
+    },
+    "class_counts": {
+      "1.0": 3165285,
+      "0.0": 823197
+    },
+    "label_counts": {},
+    "class_by_overall": {
+      "5.0 | 1.0": 2443404,
+      "4.0 | 1.0": 721881,
+      "1.0 | 0.0": 342280,
+      "3.0 | 0.0": 282900,
+      "2.0 | 0.0": 198017
+    },
+    "label_by_overall": {},
+    "label_by_class": {},
+    "review_text": {
+      "n": 3988478,
+      "min": 1,
+      "max": 31933,
+      "sum": 1481624286,
+      "empty": 4,
+      "very_short_lt5": 631,
+      "very_long_gt5000": 2984,
+      "whitespace_only": 0,
+      "mean": 371.47610843033357
+    },
+    "summary_empty": 44,
+    "summary_n": 3988438,
+    "helpful_status": {
+      "missing": 0,
+      "ok": 3988482,
+      "unparseable": 0,
+      "negative": 0,
+      "helpful_gt_total": 0,
+      "non_integer": 0
+    },
+    "helpful_means": {
+      "n_parsed": 3988482,
+      "mean_helpful_votes": 2.1852760022484743,
+      "mean_total_votes": 2.570820928864666
+    },
+    "bfr_status": {},
+    "bfr_keys_observed": {},
+    "bfr_numeric": {
+      "CS": {
+        "min": null,
+        "max": null,
+        "n": 0,
+        "sum": 0.0
+      },
+      "MNR": {
+        "min": null,
+        "max": null,
+        "n": 0,
+        "sum": 0.0
+      },
+      "RB": {
+        "min": null,
+        "max": null,
+        "n": 0,
+        "sum": 0.0
+      },
+      "RC": {
+        "min": null,
+        "max": null,
+        "n": 0,
+        "sum": 0.0
+      },
+      "PR": {
+        "min": null,
+        "max": null,
+        "n": 0,
+        "sum": 0.0
+      },
+      "NR": {
+        "min": null,
+        "max": null,
+        "n": 0,
+        "sum": 0.0
+      },
+      "FR": {
+        "min": null,
+        "max": null,
+        "n": 0,
+        "sum": 0.0
+      },
+      "RSP": {
+        "min": null,
+        "max": null,
+        "n": 0,
+        "sum": 0.0
+      },
+      "AW": {
+        "min": null,
+        "max": null,
+        "n": 0,
+        "sum": 0.0
+      },
+      "RD": {
+        "min": null,
+        "max": null,
+        "n": 0,
+        "sum": 0.0
+      },
+      "RL": {
+        "min": null,
+        "max": null,
+        "n": 0,
+        "sum": 0.0
+      },
+      "ER": {
+        "min": null,
+        "max": null,
+        "n": 0,
+        "sum": 0.0
+      },
+      "PC": {
+        "min": null,
+        "max": null,
+        "n": 0,
+        "sum": 0.0
+      }
+    },
+    "bfr_fully_parsed_n": 0,
+    "unique_counts": {
+      "reviewerID": 2386951,
+      "asin": 398219,
+      "_id": 3988482,
+      "row_hash": 3988482,
+      "id_triple": 3988482,
+      "id_text": 3988482
+    },
+    "unique_overflow": {
+      "reviewerID": false,
+      "asin": false,
+      "_id": false,
+      "row_hash": false,
+      "id_triple": false,
+      "id_text": false
+    },
+    "duplicate_extra_row_hash_hits": 0,
+    "duplicate_extra_id_hits": 0,
+    "duplicate_extra_triple_hits": 0,
+    "duplicate_extra_reviewer_asin_text_hits": 0,
+    "id_format": {
+      "mongo_oid_like": 3988482,
+      "plain_or_other": 0
+    },
+    "overall_not_1_to_5": 0,
+    "overall_non_integer": 0,
+    "unix_minmax": [
+      943142400.0,
+      1406073600.0
+    ],
+    "unix_readable": {
+      "min_iso": "1999-11-21T00:00:00+00:00",
+      "max_iso": "2014-07-23T00:00:00+00:00"
+    },
+    "unix_implausible_or_non_numeric_extra": 0,
+    "reviewtime_unparseable": 0,
+    "unix_vs_reviewtime_date_mismatches": 0,
+    "encoding_replacement_char_rows": 0,
+    "sample_head": [
+      {
+        "_id": "{'$oid': '5a1325b9741a2384e80424d4'}",
+        "reviewerID": "A7J0XOW7DYBBD",
+        "asin": "0307394530",
+        "reviewerName": "Allan Mar Cariaso",
+        "helpful": "[0, 0]",
+        "reviewText": "Can't wait to try all the amazing techniques. I just browsed and I can say that this is the book I am looking for.",
+        "overall": "5.0",
+        "summary": "Very helpful",
+        "unixReviewTime": "1393113600",
+        "reviewTime": "02 23, 2014",
+        "category": "Home_and_Kitchen",
+        "class": "1.0"
+      },
+      {
+        "_id": "{'$oid': '5a1325b9741a2384e80424d1'}",
+        "reviewerID": "A28ILV4TOG8BH2",
+        "asin": "0130350591",
+        "reviewerName": "ccjensen",
+        "helpful": "[0, 0]",
+        "reviewText": "The butter dish is serving us well, and keeping the butter fresh and healthy. Couldn't be happier with it, and the color is a pleasing green.",
+        "overall": "5.0",
+        "summary": "Nice looking, and keeps the butter fresh",
+        "unixReviewTime": "1300752000",
+        "reviewTime": "03 22, 2011",
+        "category": "Home_and_Kitchen",
+        "class": "1.0"
+      }
+    ],
+    "elapsed_sec": 174.75,
+    "triple_overflow": false,
+    "n_chunks": 20,
+    "parse_warnings_note": "C engine on_bad_lines=warn; compare newline delta for malformed multiline text"
+  },
+  {
+    "file_name": "part.csv",
+    "file_size_bytes": 70354614,
+    "file_size_human": "67.10 MB",
+    "n_rows": 99939,
+    "n_columns": 13,
+    "columns": [
+      "_id",
+      "reviewerID",
+      "asin",
+      "reviewerName",
+      "helpful",
+      "reviewText",
+      "overall",
+      "summary",
+      "unixReviewTime",
+      "reviewTime",
+      "category",
+      "BehaviouralFeatureResult",
+      "label"
+    ],
+    "newline_count": 99940,
+    "expected_data_lines_if_one_record_per_line": 99939,
+    "line_count_minus_parsed_rows": 0,
+    "missing": {
+      "_id": {
+        "missing": 0,
+        "pct": 0.0
+      },
+      "reviewerID": {
+        "missing": 0,
+        "pct": 0.0
+      },
+      "asin": {
+        "missing": 0,
+        "pct": 0.0
+      },
+      "reviewerName": {
+        "missing": 734,
+        "pct": 0.7344
+      },
+      "helpful": {
+        "missing": 0,
+        "pct": 0.0
+      },
+      "reviewText": {
+        "missing": 0,
+        "pct": 0.0
+      },
+      "overall": {
+        "missing": 0,
+        "pct": 0.0
+      },
+      "summary": {
+        "missing": 6,
+        "pct": 0.006
+      },
+      "unixReviewTime": {
+        "missing": 0,
+        "pct": 0.0
+      },
+      "reviewTime": {
+        "missing": 0,
+        "pct": 0.0
+      },
+      "category": {
+        "missing": 0,
+        "pct": 0.0
+      },
+      "BehaviouralFeatureResult": {
+        "missing": 0,
+        "pct": 0.0
+      },
+      "label": {
+        "missing": 80190,
+        "pct": 80.2389
+      }
+    },
+    "empty_rows_all_fields": 0,
+    "numeric_stats": {
+      "overall": {
+        "min": 1.0,
+        "max": 5.0,
+        "sum": 298019.0,
+        "sumsq": 1127183.0,
+        "n": 99939,
+        "non_numeric": 0,
+        "mean": 2.9820090255055582,
+        "std": 1.544775771725912
+      },
+      "unixReviewTime": {
+        "min": 948844800.0,
+        "max": 1406073600.0,
+        "sum": 135322887254400.0,
+        "sumsq": 1.8355955579073582e+23,
+        "n": 99939,
+        "non_numeric": 0,
+        "mean": 1354054846.00006,
+        "std": 57021300.0855112
+      },
+      "label": {
+        "min": 0.0,
+        "max": 0.0,
+        "sum": 0.0,
+        "sumsq": 0.0,
+        "n": 19749,
+        "non_numeric": 0,
+        "mean": 0.0,
+        "std": 0.0
+      }
+    },
+    "low_cardinality_value_counts": {
+      "overall": {
+        "5.0": 27966,
+        "1.0": 25473,
+        "3.0": 21736,
+        "2.0": 15774,
+        "4.0": 8990
+      },
+      "category": {
+        "Sports_and_Outdoors": 20147,
+        "Cell_Phones_and_Accessories": 17964,
+        "Clothing_Shoes_and_Jewelry": 17641,
+        "Toys_and_Games": 15232,
+        "Electronics": 14602,
+        "Home_and_Kitchen": 14353
+      },
+      "label": {
+        "": 80190,
+        "0.0": 19749
+      }
+    },
+    "class_counts": {},
+    "label_counts": {
+      "": 80190,
+      "0.0": 19749
+    },
+    "class_by_overall": {},
+    "label_by_overall": {
+      "5.0 | ": 23094,
+      "1.0 | ": 20275,
+      "3.0 | ": 16801,
+      "2.0 | ": 12704,
+      "4.0 | ": 7316,
+      "1.0 | 0.0": 5198,
+      "3.0 | 0.0": 4935,
+      "5.0 | 0.0": 4872,
+      "2.0 | 0.0": 3070,
+      "4.0 | 0.0": 1674
+    },
+    "label_by_class": {},
+    "review_text": {
+      "n": 99939,
+      "min": 2,
+      "max": 14946,
+      "sum": 36197368,
+      "empty": 0,
+      "very_short_lt5": 42,
+      "very_long_gt5000": 69,
+      "whitespace_only": 0,
+      "mean": 362.1946187174176
+    },
+    "summary_empty": 6,
+    "summary_n": 99933,
+    "helpful_status": {
+      "missing": 0,
+      "ok": 99939,
+      "unparseable": 0,
+      "negative": 0,
+      "helpful_gt_total": 0,
+      "non_integer": 0
+    },
+    "helpful_means": {
+      "n_parsed": 99939,
+      "mean_helpful_votes": 1.5973443800718439,
+      "mean_total_votes": 2.2186934029758154
+    },
+    "bfr_status": {
+      "ok": 99939
+    },
+    "bfr_keys_observed": {
+      "CS": 99939,
+      "MNR": 99939,
+      "RB": 99939,
+      "RC": 99939,
+      "PR": 99939,
+      "NR": 99939,
+      "FR": 99939,
+      "RSP": 99939,
+      "AW": 99939,
+      "RD": 99939,
+      "RL": 99939,
+      "ER": 99939,
+      "PC": 99939
+    },
+    "bfr_numeric": {
+      "CS": {
+        "min": 0.0,
+        "max": 1.0,
+        "n": 99939,
+        "sum": 44675.48537372291
+      },
+      "MNR": {
+        "min": 0.0,
+        "max": 1.0,
+        "n": 99939,
+        "sum": 51662.93342703017
+      },
+      "RB": {
+        "min": 0.0,
+        "max": 148.0,
+        "n": 99939,
+        "sum": 251289.0
+      },
+      "RC": {
+        "min": 0.0,
+        "max": 1660.0,
+        "n": 99939,
+        "sum": 1002925.0
+      },
+      "PR": {
+        "min": 0.0,
+        "max": 100.0,
+        "n": 99939,
+        "sum": 5790925.100161667
+      },
+      "NR": {
+        "min": 0.0,
+        "max": 100.0,
+        "n": 99939,
+        "sum": 1796495.5038029884
+      },
+      "FR": {
+        "min": 0.0,
+        "max": 1.0,
+        "n": 99939,
+        "sum": 13294.868864789354
+      },
+      "RSP": {
+        "min": 0.0,
+        "max": 1.0,
+        "n": 99939,
+        "sum": 29301.0
+      },
+      "AW": {
+        "min": 0.0,
+        "max": 5466.0,
+        "n": 99939,
+        "sum": 41637622.0
+      },
+      "RD": {
+        "min": 0.0,
+        "max": 4.0,
+        "n": 99939,
+        "sum": 135620.8121622979
+      },
+      "RL": {
+        "min": 2.0,
+        "max": 14946.0,
+        "n": 99939,
+        "sum": 36197368.0
+      },
+      "ER": {
+        "min": 0.0,
+        "max": 1.0,
+        "n": 99939,
+        "sum": 53439.0
+      },
+      "PC": {
+        "min": 0.0,
+        "max": 100.0,
+        "n": 99939,
+        "sum": 244009.75033157444
+      }
+    },
+    "bfr_fully_parsed_n": 99939,
+    "unique_counts": {
+      "reviewerID": 93792,
+      "asin": 74806,
+      "_id": 99939,
+      "row_hash": 99900,
+      "id_triple": 99900,
+      "id_text": 99900
+    },
+    "unique_overflow": {
+      "reviewerID": false,
+      "asin": false,
+      "_id": false,
+      "row_hash": false,
+      "id_triple": false,
+      "id_text": false
+    },
+    "duplicate_extra_row_hash_hits": 39,
+    "duplicate_extra_id_hits": 0,
+    "duplicate_extra_triple_hits": 39,
+    "duplicate_extra_reviewer_asin_text_hits": 39,
+    "id_format": {
+      "mongo_oid_like": 99939,
+      "plain_or_other": 0
+    },
+    "overall_not_1_to_5": 0,
+    "overall_non_integer": 0,
+    "unix_minmax": [
+      948844800.0,
+      1406073600.0
+    ],
+    "unix_readable": {
+      "min_iso": "2000-01-26T00:00:00+00:00",
+      "max_iso": "2014-07-23T00:00:00+00:00"
+    },
+    "unix_implausible_or_non_numeric_extra": 0,
+    "reviewtime_unparseable": 0,
+    "unix_vs_reviewtime_date_mismatches": 0,
+    "encoding_replacement_char_rows": 0,
+    "sample_head": [
+      {
+        "_id": "{'$oid': '5a421d732bfbb88f180e24d2'}",
+        "reviewerID": "A3ITLRYWLKJP5B",
+        "asin": "B000809PCG",
+        "reviewerName": "Barry",
+        "helpful": "[1.0, 2.0]",
+        "reviewText": "it's ok, but not great fun.  maybe it just makes my tiny brain work too hard.  I did see this game via Mental Floss magazine.  I'm going to continue to expose my family and friends to it...maybe it will click with some of them and hence make it more fun for me.  full disclosure:  the only time I played it so far was with my 14 year old son, and it was just the 2 of us.  will keep playing and update my review.",
+        "overall": "3.0",
+        "summary": "Not the first game I reach for...",
+        "unixReviewTime": "1357689600",
+        "reviewTime": "01 9, 2013",
+        "category": "Toys_and_Games",
+        "BehaviouralFeatureResult": "{'CS': 0.525950681, 'MNR': 0.0, 'RB': 0.0, 'RC': 2.0, 'PR': 50.0, 'NR': 50.0, 'FR': 0.0, 'RSP': 0.0, 'AW': 0.0, 'RD': 0.5, 'RL': 412.0, 'ER': 0.0, 'PC': 1.27388535}",
+        "label": "0.0"
+      },
+      {
+        "_id": "{'$oid': '5a421d732bfbb88f180e24d3'}",
+        "reviewerID": "AA65S7IF7V9GU",
+        "asin": "B004Y6F9KW",
+        "reviewerName": "J Ayles",
+        "helpful": "[0.0, 0.0]",
+        "reviewText": "I love this Air-soft rifle. I love the scope it looks cool. The laser works really well. I would recommend getting it.UK ARMS P36 Spring 280-FPS Air-soft Gun Rifle with LASER AND FLASHLIGHT with EXTRA James Bond Concealable Pistol 180-FPS COMBO Air-soft Gun",
+        "overall": "5.0",
+        "summary": "Cool",
+        "unixReviewTime": "1314230400",
+        "reviewTime": "08 25, 2011",
+        "category": "Sports_and_Outdoors",
+        "BehaviouralFeatureResult": "{'CS': 0.0, 'MNR': 0.0, 'RB': 0.0, 'RC': 0.0, 'PR': 0.0, 'NR': 0.0, 'FR': 0.0, 'RSP': 1.0, 'AW': 0.0, 'RD': 2.2, 'RL': 257.0, 'ER': 1.0, 'PC': 24.64454976}",
+        "label": "0.0"
+      }
+    ],
+    "elapsed_sec": 8.73,
+    "triple_overflow": false,
+    "n_chunks": 1,
+    "parse_warnings_note": "C engine on_bad_lines=warn; compare newline delta for malformed multiline text"
+  },
+  {
+    "file_name": "separate.csv",
+    "file_size_bytes": 1078162395,
+    "file_size_human": "1.00 GB",
+    "n_rows": 1524234,
+    "n_columns": 13,
+    "columns": [
+      "reviewerID",
+      "asin",
+      "reviewerName",
+      "helpful",
+      "reviewText",
+      "overall",
+      "summary",
+      "unixReviewTime",
+      "reviewTime",
+      "category",
+      "class",
+      "BehaviouralFeatureResult",
+      "label"
+    ],
+    "newline_count": 1524253,
+    "expected_data_lines_if_one_record_per_line": 1524252,
+    "line_count_minus_parsed_rows": 18,
+    "missing": {
+      "reviewerID": {
+        "missing": 0,
+        "pct": 0.0
+      },
+      "asin": {
+        "missing": 0,
+        "pct": 0.0
+      },
+      "reviewerName": {
+        "missing": 10371,
+        "pct": 0.6804
+      },
+      "helpful": {
+        "missing": 0,
+        "pct": 0.0
+      },
+      "reviewText": {
+        "missing": 1,
+        "pct": 0.0001
+      },
+      "overall": {
+        "missing": 0,
+        "pct": 0.0
+      },
+      "summary": {
+        "missing": 43,
+        "pct": 0.0028
+      },
+      "unixReviewTime": {
+        "missing": 0,
+        "pct": 0.0
+      },
+      "reviewTime": {
+        "missing": 0,
+        "pct": 0.0
+      },
+      "category": {
+        "missing": 0,
+        "pct": 0.0
+      },
+      "class": {
+        "missing": 1324239,
+        "pct": 86.879
+      },
+      "BehaviouralFeatureResult": {
+        "missing": 0,
+        "pct": 0.0
+      },
+      "label": {
+        "missing": 0,
+        "pct": 0.0
+      }
+    },
+    "empty_rows_all_fields": 0,
+    "numeric_stats": {
+      "overall": {
+        "min": 1.0,
+        "max": 5.0,
+        "sum": 4430299.0,
+        "sumsq": 16377799.0,
+        "n": 1524234,
+        "non_numeric": 0,
+        "mean": 2.906574056214466,
+        "std": 1.5155080708629005
+      },
+      "unixReviewTime": {
+        "min": 930355200.0,
+        "max": 1406073600.0,
+        "sum": 2058063619305600.0,
+        "sumsq": 2.7843306585203676e+24,
+        "n": 1524234,
+        "non_numeric": 0,
+        "mean": 1350228127.246604,
+        "std": 59934519.76315219
+      },
+      "class": {
+        "min": 0.0,
+        "max": 1.0,
+        "sum": 73773.0,
+        "sumsq": 73773.0,
+        "n": 199995,
+        "non_numeric": 0,
+        "mean": 0.3688742218555464,
+        "std": 0.4824997723377821
+      },
+      "label": {
+        "min": 0.0,
+        "max": 1.0,
+        "sum": 31013.0,
+        "sumsq": 31013.0,
+        "n": 1524234,
+        "non_numeric": 0,
+        "mean": 0.020346613446491812,
+        "std": 0.14118296203066025
+      }
+    },
+    "low_cardinality_value_counts": {
+      "overall": {
+        "1.0": 399833,
+        "5.0": 386117,
+        "3.0": 367973,
+        "2.0": 242641,
+        "4.0": 127670
+      },
+      "category": {
+        "Home_and_Kitchen": 264241,
+        "Cell_Phones_and_Accessories": 260551,
+        "Toys_and_Games": 254635,
+        "Sports_and_Outdoors": 254282,
+        "Electronics": 246596,
+        "Clothing_Shoes_and_Jewelry": 243929
+      },
+      "class": {
+        "": 1324239,
+        "0.0": 126222,
+        "1.0": 73773
+      },
+      "label": {
+        "0": 1493221,
+        "1": 31013
+      }
+    },
+    "class_counts": {
+      "0.0": 126222,
+      "1.0": 73773,
+      "": 1324239
+    },
+    "label_counts": {
+      "0": 1493221,
+      "1": 31013
+    },
+    "class_by_overall": {
+      "1.0 | ": 349970,
+      "5.0 | ": 330287,
+      "3.0 | ": 321667,
+      "2.0 | ": 212588,
+      "4.0 | ": 109727,
+      "5.0 | 1.0": 55830,
+      "1.0 | 0.0": 49863,
+      "3.0 | 0.0": 46306,
+      "2.0 | 0.0": 30053,
+      "4.0 | 1.0": 17943
+    },
+    "label_by_overall": {
+      "1.0 | 0": 392535,
+      "5.0 | 0": 375296,
+      "3.0 | 0": 362936,
+      "2.0 | 0": 237943,
+      "4.0 | 0": 124511,
+      "5.0 | 1": 10821,
+      "1.0 | 1": 7298,
+      "3.0 | 1": 5037,
+      "2.0 | 1": 4698,
+      "4.0 | 1": 3159
+    },
+    "label_by_class": {
+      " | 0": 1297345,
+      "0.0 | 0": 124016,
+      "1.0 | 0": 71860,
+      " | 1": 26894,
+      "0.0 | 1": 2206,
+      "1.0 | 1": 1913
+    },
+    "review_text": {
+      "n": 1524233,
+      "min": 1,
+      "max": 31947,
+      "sum": 578099399,
+      "empty": 1,
+      "very_short_lt5": 391,
+      "very_long_gt5000": 1387,
+      "whitespace_only": 0,
+      "mean": 379.27232844322356
+    },
+    "summary_empty": 43,
+    "summary_n": 1524191,
+    "helpful_status": {
+      "missing": 0,
+      "ok": 1524234,
+      "unparseable": 0,
+      "negative": 0,
+      "helpful_gt_total": 0,
+      "non_integer": 0
+    },
+    "helpful_means": {
+      "n_parsed": 1524234,
+      "mean_helpful_votes": 1.8134079150576619,
+      "mean_total_votes": 2.4927478326818586
+    },
+    "bfr_status": {
+      "ok": 200000,
+      "present_unparsed": 1324234
+    },
+    "bfr_keys_observed": {
+      "CS": 200000,
+      "MNR": 200000,
+      "RB": 200000,
+      "RC": 200000,
+      "PR": 200000,
+      "NR": 200000,
+      "FR": 200000,
+      "RSP": 200000,
+      "AW": 200000,
+      "RD": 200000,
+      "RL": 200000,
+      "ER": 200000,
+      "PC": 200000
+    },
+    "bfr_numeric": {
+      "CS": {
+        "min": 0.0,
+        "max": 1.0000000000000002,
+        "n": 200000,
+        "sum": 65767.76489665385
+      },
+      "MNR": {
+        "min": 0.0,
+        "max": 1.0,
+        "n": 200000,
+        "sum": 69530.96945711593
+      },
+      "RB": {
+        "min": 0.0,
+        "max": 109.0,
+        "n": 200000,
+        "sum": 260210.0
+      },
+      "RC": {
+        "min": 0.0,
+        "max": 1660.0,
+        "n": 200000,
+        "sum": 1878824.0
+      },
+      "PR": {
+        "min": 0.0,
+        "max": 100.0,
+        "n": 200000,
+        "sum": 11108387.199518828
+      },
+      "NR": {
+        "min": 0.0,
+        "max": 100.0,
+        "n": 200000,
+        "sum": 2453210.7696357453
+      },
+      "FR": {
+        "min": 0.0,
+        "max": 1.0,
+        "n": 200000,
+        "sum": 19268.891791083355
+      },
+      "RSP": {
+        "min": 0.0,
+        "max": 1.0,
+        "n": 200000,
+        "sum": 51825.0
+      },
+      "AW": {
+        "min": 0.0,
+        "max": 5466.0,
+        "n": 200000,
+        "sum": 103129125.0
+      },
+      "RD": {
+        "min": 0.0,
+        "max": 4.0,
+        "n": 200000,
+        "sum": 270431.7721267763
+      },
+      "RL": {
+        "min": 2.0,
+        "max": 28238.0,
+        "n": 200000,
+        "sum": 75179572.0
+      },
+      "ER": {
+        "min": 0.0,
+        "max": 1.0,
+        "n": 200000,
+        "sum": 105694.0
+      },
+      "PC": {
+        "min": 0.0,
+        "max": 100.0,
+        "n": 200000,
+        "sum": 469066.4070324608
+      }
+    },
+    "bfr_fully_parsed_n": 200000,
+    "unique_counts": {
+      "reviewerID": 1282618,
+      "asin": 610937,
+      "_id": 0,
+      "row_hash": 1520951,
+      "id_triple": 1520951,
+      "id_text": 1520951
+    },
+    "unique_overflow": {
+      "reviewerID": false,
+      "asin": false,
+      "_id": false,
+      "row_hash": false,
+      "id_triple": false,
+      "id_text": false
+    },
+    "duplicate_extra_row_hash_hits": 3283,
+    "duplicate_extra_id_hits": 0,
+    "duplicate_extra_triple_hits": 3283,
+    "duplicate_extra_reviewer_asin_text_hits": 3283,
+    "id_format": {
+      "mongo_oid_like": 0,
+      "plain_or_other": 0
+    },
+    "overall_not_1_to_5": 0,
+    "overall_non_integer": 0,
+    "unix_minmax": [
+      930355200.0,
+      1406073600.0
+    ],
+    "unix_readable": {
+      "min_iso": "1999-06-26T00:00:00+00:00",
+      "max_iso": "2014-07-23T00:00:00+00:00"
+    },
+    "unix_implausible_or_non_numeric_extra": 0,
+    "reviewtime_unparseable": 0,
+    "unix_vs_reviewtime_date_mismatches": 0,
+    "encoding_replacement_char_rows": 0,
+    "sample_head": [
+      {
+        "reviewerID": "A38ZJ690VW86XK",
+        "asin": "B0037UP9MY",
+        "reviewerName": "dr victoria",
+        "helpful": "[0.0, 0.0]",
+        "reviewText": "My 18 month old granddaughter has made this her favorite baby. Just the right size for a small child. Made very well.",
+        "overall": "5.0",
+        "summary": "My 18 month old granddaughter has made this her favorite baby. Just the right size for a small ...",
+        "unixReviewTime": "1403654400",
+        "reviewTime": "06 25, 2014",
+        "category": "Toys_and_Games",
+        "class": "1.0",
+        "BehaviouralFeatureResult": "{'CS': 0.43082021842766455, 'MNR': 1.0, 'RB': 11.0, 'RC': 11.0, 'PR': 100.0, 'NR': 0.0, 'FR': 0.18181818181818182, 'RSP': 0.0, 'AW': 0.0, 'RD': 0.39160839160839167, 'RL': 117.0, 'ER': 1.0, 'PC': 0.0}",
+        "label": "0"
+      },
+      {
+        "reviewerID": "AQJK9G5BJDKHE",
+        "asin": "B001W30D2O",
+        "reviewerName": "Amazon Customer",
+        "helpful": "[0.0, 0.0]",
+        "reviewText": "Got this for my son when he was only 4 months old. He loved it then and still does. For what this does I'm surprised it doesn't cost more. Listening to the same recordings every time can drive parents crazy. This lets you pick and choose songs and comments that you find tolerable. If you get tired of them, just plug it in to your computer and change them up.I do wish this came in more than just one color for each gender. I have 4 nephews that I'd love to get this for but I don't to avoid confusion. I'd recommend it for anyone with young kids. Older kids may find it a bit childish.",
+        "overall": "5.0",
+        "summary": "Pretty cool",
+        "unixReviewTime": "1329782400",
+        "reviewTime": "02 21, 2012",
+        "category": "Toys_and_Games",
+        "class": "1.0",
+        "BehaviouralFeatureResult": "{'CS': 0.3596816537144748, 'MNR': 1.0, 'RB': 2.0, 'RC': 7.0, 'PR': 42.857142857142854, 'NR': 28.57142857142857, 'FR': 0.42857142857142855, 'RSP': 0.0, 'AW': 944.0, 'RD': 0.37748917748917776, 'RL': 587.0, 'ER': 1.0, 'PC': 0.6493506493506493}",
+        "label": "0"
+      }
+    ],
+    "elapsed_sec": 73.24,
+    "triple_overflow": false,
+    "n_chunks": 8,
+    "parse_warnings_note": "C engine on_bad_lines=warn; compare newline delta for malformed multiline text"
+  },
+  {
+    "file_name": "Sports_and_Outdoors.csv",
+    "file_size_bytes": 1571286154,
+    "file_size_human": "1.46 GB",
+    "n_rows": 3013256,
+    "n_columns": 12,
+    "columns": [
+      "_id",
+      "reviewerID",
+      "asin",
+      "reviewerName",
+      "helpful",
+      "reviewText",
+      "overall",
+      "summary",
+      "unixReviewTime",
+      "reviewTime",
+      "category",
+      "class"
+    ],
+    "newline_count": 3013280,
+    "expected_data_lines_if_one_record_per_line": 3013279,
+    "line_count_minus_parsed_rows": 23,
+    "missing": {
+      "_id": {
+        "missing": 0,
+        "pct": 0.0
+      },
+      "reviewerID": {
+        "missing": 0,
+        "pct": 0.0
+      },
+      "asin": {
+        "missing": 0,
+        "pct": 0.0
+      },
+      "reviewerName": {
+        "missing": 13174,
+        "pct": 0.4372
+      },
+      "helpful": {
+        "missing": 0,
+        "pct": 0.0
+      },
+      "reviewText": {
+        "missing": 3,
+        "pct": 0.0001
+      },
+      "overall": {
+        "missing": 0,
+        "pct": 0.0
+      },
+      "summary": {
+        "missing": 23,
+        "pct": 0.0008
+      },
+      "unixReviewTime": {
+        "missing": 0,
+        "pct": 0.0
+      },
+      "reviewTime": {
+        "missing": 0,
+        "pct": 0.0
+      },
+      "category": {
+        "missing": 0,
+        "pct": 0.0
+      },
+      "class": {
+        "missing": 0,
+        "pct": 0.0
+      }
+    },
+    "empty_rows_all_fields": 0,
+    "numeric_stats": {
+      "overall": {
+        "min": 1.0,
+        "max": 5.0,
+        "sum": 12874506.0,
+        "sumsq": 59084258.0,
+        "n": 3013256,
+        "non_numeric": 0,
+        "mean": 4.272622704476486,
+        "std": 1.1631019669667033
+      },
+      "unixReviewTime": {
+        "min": 902102400.0,
+        "max": 1406073600.0,
+        "sum": 4088235856291200.0,
+        "sumsq": 5.553886381950997e+24,
+        "n": 3013256,
+        "non_numeric": 0,
+        "mean": 1356750258.2891066,
+        "std": 48784490.959964395
+      },
+      "class": {
+        "min": 0.0,
+        "max": 1.0,
+        "sum": 2481105.0,
+        "sumsq": 2481105.0,
+        "n": 3013256,
+        "non_numeric": 0,
+        "mean": 0.8233966845166822,
+        "std": 0.38133264277218326
+      }
+    },
+    "low_cardinality_value_counts": {
+      "overall": {
+        "5.0": 1862444,
+        "4.0": 618661,
+        "3.0": 212979,
+        "1.0": 189639,
+        "2.0": 129533
+      },
+      "category": {
+        "Sports_and_Outdoors": 3013256
+      },
+      "class": {
+        "1.0": 2481105,
+        "0.0": 532151
+      }
+    },
+    "class_counts": {
+      "1.0": 2481105,
+      "0.0": 532151
+    },
+    "label_counts": {},
+    "class_by_overall": {
+      "5.0 | 1.0": 1862444,
+      "4.0 | 1.0": 618661,
+      "3.0 | 0.0": 212979,
+      "1.0 | 0.0": 189639,
+      "2.0 | 0.0": 129533
+    },
+    "label_by_overall": {},
+    "label_by_class": {},
+    "review_text": {
+      "n": 3013253,
+      "min": 1,
+      "max": 32303,
+      "sum": 1078220704,
+      "empty": 3,
+      "very_short_lt5": 828,
+      "very_long_gt5000": 2661,
+      "whitespace_only": 0,
+      "mean": 357.826144701424
+    },
+    "summary_empty": 23,
+    "summary_n": 3013233,
+    "helpful_status": {
+      "missing": 0,
+      "ok": 3013256,
+      "unparseable": 0,
+      "negative": 0,
+      "helpful_gt_total": 0,
+      "non_integer": 0
+    },
+    "helpful_means": {
+      "n_parsed": 3013256,
+      "mean_helpful_votes": 1.53249541359911,
+      "mean_total_votes": 1.9117728463827832
+    },
+    "bfr_status": {},
+    "bfr_keys_observed": {},
+    "bfr_numeric": {
+      "CS": {
+        "min": null,
+        "max": null,
+        "n": 0,
+        "sum": 0.0
+      },
+      "MNR": {
+        "min": null,
+        "max": null,
+        "n": 0,
+        "sum": 0.0
+      },
+      "RB": {
+        "min": null,
+        "max": null,
+        "n": 0,
+        "sum": 0.0
+      },
+      "RC": {
+        "min": null,
+        "max": null,
+        "n": 0,
+        "sum": 0.0
+      },
+      "PR": {
+        "min": null,
+        "max": null,
+        "n": 0,
+        "sum": 0.0
+      },
+      "NR": {
+        "min": null,
+        "max": null,
+        "n": 0,
+        "sum": 0.0
+      },
+      "FR": {
+        "min": null,
+        "max": null,
+        "n": 0,
+        "sum": 0.0
+      },
+      "RSP": {
+        "min": null,
+        "max": null,
+        "n": 0,
+        "sum": 0.0
+      },
+      "AW": {
+        "min": null,
+        "max": null,
+        "n": 0,
+        "sum": 0.0
+      },
+      "RD": {
+        "min": null,
+        "max": null,
+        "n": 0,
+        "sum": 0.0
+      },
+      "RL": {
+        "min": null,
+        "max": null,
+        "n": 0,
+        "sum": 0.0
+      },
+      "ER": {
+        "min": null,
+        "max": null,
+        "n": 0,
+        "sum": 0.0
+      },
+      "PC": {
+        "min": null,
+        "max": null,
+        "n": 0,
+        "sum": 0.0
+      }
+    },
+    "bfr_fully_parsed_n": 0,
+    "unique_counts": {
+      "reviewerID": 1864348,
+      "asin": 459654,
+      "_id": 3013256,
+      "row_hash": 3013256,
+      "id_triple": 3013256,
+      "id_text": 3013256
+    },
+    "unique_overflow": {
+      "reviewerID": false,
+      "asin": false,
+      "_id": false,
+      "row_hash": false,
+      "id_triple": false,
+      "id_text": false
+    },
+    "duplicate_extra_row_hash_hits": 0,
+    "duplicate_extra_id_hits": 0,
+    "duplicate_extra_triple_hits": 0,
+    "duplicate_extra_reviewer_asin_text_hits": 0,
+    "id_format": {
+      "mongo_oid_like": 3013256,
+      "plain_or_other": 0
+    },
+    "overall_not_1_to_5": 0,
+    "overall_non_integer": 0,
+    "unix_minmax": [
+      902102400.0,
+      1406073600.0
+    ],
+    "unix_readable": {
+      "min_iso": "1998-08-03T00:00:00+00:00",
+      "max_iso": "2014-07-23T00:00:00+00:00"
+    },
+    "unix_implausible_or_non_numeric_extra": 0,
+    "reviewtime_unparseable": 0,
+    "unix_vs_reviewtime_date_mismatches": 0,
+    "encoding_replacement_char_rows": 0,
+    "sample_head": [
+      {
+        "_id": "{'$oid': '5a132768741a2384e847b8ed'}",
+        "reviewerID": "A2PAVURT4NOHE1",
+        "asin": "0000031852",
+        "reviewerName": "Leah",
+        "helpful": "[0, 0]",
+        "reviewText": "Bought it for a ballet tutu but it is being worn around the house with leggings. Really cute, full skirt.",
+        "overall": "5.0",
+        "summary": "Super cute",
+        "unixReviewTime": "1388361600",
+        "reviewTime": "12 30, 2013",
+        "category": "Sports_and_Outdoors",
+        "class": "1.0"
+      },
+      {
+        "_id": "{'$oid': '5a132768741a2384e847b8e9'}",
+        "reviewerID": "A1SNLWGLFXD70K",
+        "asin": "0000031852",
+        "reviewerName": "DEVA",
+        "helpful": "[0, 0]",
+        "reviewText": "I origonally didn't get the item I ordered.  When contacting the company they got back with me quickly.  It turned out the item was out of stock.  They sent it once it came in stock.  This wasn't a problem for me since I ordered the item way in advance for my daughters birthday.  I would recommend this selling but ordered ahead of time just incase.",
+        "overall": "4.0",
+        "summary": "Happy with purchase even though it came a lot later than expected.",
+        "unixReviewTime": "1392940800",
+        "reviewTime": "02 21, 2014",
+        "category": "Sports_and_Outdoors",
+        "class": "1.0"
+      }
+    ],
+    "elapsed_sec": 147.46,
+    "triple_overflow": false,
+    "n_chunks": 16,
+    "parse_warnings_note": "C engine on_bad_lines=warn; compare newline delta for malformed multiline text"
+  },
+  {
+    "file_name": "Toys_and_Games.csv",
+    "file_size_bytes": 1006191417,
+    "file_size_human": "959.58 MB",
+    "n_rows": 1997140,
+    "n_columns": 12,
+    "columns": [
+      "_id",
+      "reviewerID",
+      "asin",
+      "reviewerName",
+      "helpful",
+      "reviewText",
+      "overall",
+      "summary",
+      "unixReviewTime",
+      "reviewTime",
+      "category",
+      "class"
+    ],
+    "newline_count": 1997178,
+    "expected_data_lines_if_one_record_per_line": 1997177,
+    "line_count_minus_parsed_rows": 37,
+    "missing": {
+      "_id": {
+        "missing": 0,
+        "pct": 0.0
+      },
+      "reviewerID": {
+        "missing": 0,
+        "pct": 0.0
+      },
+      "asin": {
+        "missing": 0,
+        "pct": 0.0
+      },
+      "reviewerName": {
+        "missing": 11057,
+        "pct": 0.5536
+      },
+      "helpful": {
+        "missing": 0,
+        "pct": 0.0
+      },
+      "reviewText": {
+        "missing": 0,
+        "pct": 0.0
+      },
+      "overall": {
+        "missing": 0,
+        "pct": 0.0
+      },
+      "summary": {
+        "missing": 24,
+        "pct": 0.0012
+      },
+      "unixReviewTime": {
+        "missing": 0,
+        "pct": 0.0
+      },
+      "reviewTime": {
+        "missing": 0,
+        "pct": 0.0
+      },
+      "category": {
+        "missing": 0,
+        "pct": 0.0
+      },
+      "class": {
+        "missing": 0,
+        "pct": 0.0
+      }
+    },
+    "empty_rows_all_fields": 0,
+    "numeric_stats": {
+      "overall": {
+        "min": 1.0,
+        "max": 5.0,
+        "sum": 8596175.0,
+        "sumsq": 39681635.0,
+        "n": 1997140,
+        "non_numeric": 0,
+        "mean": 4.304242566870625,
+        "std": 1.1587607281718801
+      },
+      "unixReviewTime": {
+        "min": 930787200.0,
+        "max": 1406073600.0,
+        "sum": 2678789749449600.0,
+        "sumsq": 3.603164462331273e+24,
+        "n": 1997140,
+        "non_numeric": 0,
+        "mean": 1341312952.2465124,
+        "std": 71005261.94020182
+      },
+      "class": {
+        "min": 0.0,
+        "max": 1.0,
+        "sum": 1662754.0,
+        "sumsq": 1662754.0,
+        "n": 1997140,
+        "non_numeric": 0,
+        "mean": 0.8325675716274272,
+        "std": 0.3733615008297402
+      }
+    },
+    "low_cardinality_value_counts": {
+      "overall": {
+        "5.0": 1275445,
+        "4.0": 387309,
+        "3.0": 129098,
+        "1.0": 128156,
+        "2.0": 77132
+      },
+      "category": {
+        "Toys_and_Games": 1997140
+      },
+      "class": {
+        "1.0": 1662754,
+        "0.0": 334386
+      }
+    },
+    "class_counts": {
+      "1.0": 1662754,
+      "0.0": 334386
+    },
+    "label_counts": {},
+    "class_by_overall": {
+      "5.0 | 1.0": 1275445,
+      "4.0 | 1.0": 387309,
+      "3.0 | 0.0": 129098,
+      "1.0 | 0.0": 128156,
+      "2.0 | 0.0": 77132
+    },
+    "label_by_overall": {},
+    "label_by_class": {},
+    "review_text": {
+      "n": 1997140,
+      "min": 1,
+      "max": 32427,
+      "sum": 687987900,
+      "empty": 0,
+      "very_short_lt5": 550,
+      "very_long_gt5000": 1301,
+      "whitespace_only": 0,
+      "mean": 344.4865657890784
+    },
+    "summary_empty": 24,
+    "summary_n": 1997116,
+    "helpful_status": {
+      "missing": 0,
+      "ok": 1997140,
+      "unparseable": 0,
+      "negative": 0,
+      "helpful_gt_total": 1,
+      "non_integer": 0
+    },
+    "helpful_means": {
+      "n_parsed": 1997140,
+      "mean_helpful_votes": 1.4940139399341057,
+      "mean_total_votes": 1.8693862222978859
+    },
+    "bfr_status": {},
+    "bfr_keys_observed": {},
+    "bfr_numeric": {
+      "CS": {
+        "min": null,
+        "max": null,
+        "n": 0,
+        "sum": 0.0
+      },
+      "MNR": {
+        "min": null,
+        "max": null,
+        "n": 0,
+        "sum": 0.0
+      },
+      "RB": {
+        "min": null,
+        "max": null,
+        "n": 0,
+        "sum": 0.0
+      },
+      "RC": {
+        "min": null,
+        "max": null,
+        "n": 0,
+        "sum": 0.0
+      },
+      "PR": {
+        "min": null,
+        "max": null,
+        "n": 0,
+        "sum": 0.0
+      },
+      "NR": {
+        "min": null,
+        "max": null,
+        "n": 0,
+        "sum": 0.0
+      },
+      "FR": {
+        "min": null,
+        "max": null,
+        "n": 0,
+        "sum": 0.0
+      },
+      "RSP": {
+        "min": null,
+        "max": null,
+        "n": 0,
+        "sum": 0.0
+      },
+      "AW": {
+        "min": null,
+        "max": null,
+        "n": 0,
+        "sum": 0.0
+      },
+      "RD": {
+        "min": null,
+        "max": null,
+        "n": 0,
+        "sum": 0.0
+      },
+      "RL": {
+        "min": null,
+        "max": null,
+        "n": 0,
+        "sum": 0.0
+      },
+      "ER": {
+        "min": null,
+        "max": null,
+        "n": 0,
+        "sum": 0.0
+      },
+      "PC": {
+        "min": null,
+        "max": null,
+        "n": 0,
+        "sum": 0.0
+      }
+    },
+    "bfr_fully_parsed_n": 0,
+    "unique_counts": {
+      "reviewerID": 1215502,
+      "asin": 310714,
+      "_id": 1997140,
+      "row_hash": 1997140,
+      "id_triple": 1997140,
+      "id_text": 1997140
+    },
+    "unique_overflow": {
+      "reviewerID": false,
+      "asin": false,
+      "_id": false,
+      "row_hash": false,
+      "id_triple": false,
+      "id_text": false
+    },
+    "duplicate_extra_row_hash_hits": 0,
+    "duplicate_extra_id_hits": 0,
+    "duplicate_extra_triple_hits": 0,
+    "duplicate_extra_reviewer_asin_text_hits": 0,
+    "id_format": {
+      "mongo_oid_like": 1997140,
+      "plain_or_other": 0
+    },
+    "overall_not_1_to_5": 0,
+    "overall_non_integer": 0,
+    "unix_minmax": [
+      930787200.0,
+      1406073600.0
+    ],
+    "unix_readable": {
+      "min_iso": "1999-07-01T00:00:00+00:00",
+      "max_iso": "2014-07-23T00:00:00+00:00"
+    },
+    "unix_implausible_or_non_numeric_extra": 0,
+    "reviewtime_unparseable": 0,
+    "unix_vs_reviewtime_date_mismatches": 0,
+    "encoding_replacement_char_rows": 0,
+    "sample_head": [
+      {
+        "_id": "{'$oid': '5a13282b741a2384e879a620'}",
+        "reviewerID": "A3C9CSW3TJITGT",
+        "asin": "0005069491",
+        "reviewerName": "Renee",
+        "helpful": "[0, 0]",
+        "reviewText": "I love these felt nursery rhyme characters and scenes.  The quality of the felt is good, and the illustrations are detailed and pretty.  As noted, the figures and scenes are printed on 2 large sheets of flannel and each individual item needs to be cut out.  This process took me 2 hours of tiny cutting.  To me it does not lend itself to a book form but rather laying out the scenes separately or for use on a flannel board.  However, I love the quiet play it offers for my toddler, and as a former Kindergarten teacher, I understand the value of learning rhyme and its connection to future reading.  Overall, delightful product with some work involved.",
+        "overall": "4.0",
+        "summary": "Charming characters but busy work required",
+        "unixReviewTime": "1377561600",
+        "reviewTime": "08 27, 2013",
+        "category": "Toys_and_Games",
+        "class": "1.0"
+      },
+      {
+        "_id": "{'$oid': '5a13282b741a2384e879a621'}",
+        "reviewerID": "A31POTIYCKSZ9G",
+        "asin": "0076561046",
+        "reviewerName": "So CA Teacher",
+        "helpful": "[0, 0]",
+        "reviewText": "I see no directions for its use. Therefore I have to make up the games, unfortunately.",
+        "overall": "3.0",
+        "summary": "No directions for use...",
+        "unixReviewTime": "1404864000",
+        "reviewTime": "07 9, 2014",
+        "category": "Toys_and_Games",
+        "class": "0.0"
+      }
+    ],
+    "elapsed_sec": 78.85,
+    "triple_overflow": false,
+    "n_chunks": 10,
+    "parse_warnings_note": "C engine on_bad_lines=warn; compare newline delta for malformed multiline text"
+  }
+]
