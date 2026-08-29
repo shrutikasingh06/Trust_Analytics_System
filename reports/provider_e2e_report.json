@@ -1,0 +1,220 @@
+{
+  "configured_backends": {
+    "rainforest": false,
+    "serpapi": true,
+    "flipkart_affiliate": false
+  },
+  "provider_health": {
+    "amazon": {
+      "provider": "amazon",
+      "configured": true,
+      "backends": [
+        "serpapi"
+      ],
+      "note": "Amazon Product Advertising API typically does not return customer reviews. Reviews require Rainforest API or SerpAPI (authorized third-party) when keys are set.",
+      "display_name": "Amazon",
+      "enabled_in_config": true
+    },
+    "flipkart": {
+      "provider": "flipkart",
+      "configured": false,
+      "product_api": null,
+      "reviews": "not provided by the Affiliate Product API",
+      "display_name": "Flipkart",
+      "enabled_in_config": true
+    },
+    "myntra": {
+      "provider": "myntra",
+      "configured": false,
+      "reason": "No authorized Myntra product/review API is configured.",
+      "display_name": "Myntra",
+      "enabled_in_config": true
+    },
+    "nykaa": {
+      "provider": "nykaa",
+      "configured": false,
+      "reason": "No authorized Nykaa product/review API is configured.",
+      "display_name": "Nykaa",
+      "enabled_in_config": true
+    },
+    "meesho": {
+      "provider": "meesho",
+      "configured": false,
+      "reason": "No authorized Meesho product/review API is configured.",
+      "display_name": "Meesho",
+      "enabled_in_config": true
+    },
+    "ajio": {
+      "provider": "ajio",
+      "configured": false,
+      "reason": "No authorized Ajio product/review API is configured.",
+      "display_name": "Ajio",
+      "enabled_in_config": true
+    },
+    "croma": {
+      "provider": "croma",
+      "configured": false,
+      "reason": "No authorized Croma product/review API is configured.",
+      "display_name": "Croma",
+      "enabled_in_config": true
+    },
+    "reliance_digital": {
+      "provider": "reliance_digital",
+      "configured": false,
+      "reason": "No authorized Reliance Digital product/review API is configured.",
+      "display_name": "Reliance Digital",
+      "enabled_in_config": true
+    },
+    "tata_cliq": {
+      "provider": "tata_cliq",
+      "configured": false,
+      "reason": "No authorized Tata CLiQ product/review API is configured.",
+      "display_name": "Tata CLiQ",
+      "enabled_in_config": true
+    },
+    "generic": {
+      "provider": "generic_jsonld",
+      "configured": false,
+      "note": "JSON-LD Product only; reviews almost never present. Disabled by default."
+    }
+  },
+  "probes": [
+    {
+      "probe": "amazon",
+      "url": "https://www.amazon.com/dp/B072MQ5BRX",
+      "attempted_live_fetch": true,
+      "status": "LIVE",
+      "platform": "amazon",
+      "provider": "amazon",
+      "provider_configured": true,
+      "n_reviews": 8,
+      "has_product": true,
+      "data_mode": "LIVE",
+      "data_status": "LIVE",
+      "source": "Live review data available",
+      "live_success": true
+    },
+    {
+      "probe": "flipkart",
+      "url": "https://www.flipkart.com/example/p/itm123?pid=TESTPID",
+      "attempted_live_fetch": false,
+      "status": "DATA_ACCESS_UNAVAILABLE",
+      "platform": "flipkart",
+      "provider": "flipkart",
+      "provider_configured": false,
+      "n_reviews": 0,
+      "has_product": false,
+      "data_mode": "UNAVAILABLE",
+      "data_status": "NOT_CONFIGURED",
+      "source": "Live review analysis unavailable",
+      "live_success": false
+    },
+    {
+      "probe": "myntra",
+      "url": "https://www.myntra.com/dresses/example",
+      "attempted_live_fetch": false,
+      "status": "DATA_ACCESS_UNAVAILABLE",
+      "platform": "myntra",
+      "provider": "myntra",
+      "provider_configured": false,
+      "n_reviews": 0,
+      "has_product": false,
+      "data_mode": "UNAVAILABLE",
+      "data_status": "NOT_CONFIGURED",
+      "source": "Live review analysis unavailable",
+      "live_success": false
+    },
+    {
+      "probe": "nykaa",
+      "url": "https://www.nykaa.com/example",
+      "attempted_live_fetch": false,
+      "status": "DATA_ACCESS_UNAVAILABLE",
+      "platform": "nykaa",
+      "provider": "nykaa",
+      "provider_configured": false,
+      "n_reviews": 0,
+      "has_product": false,
+      "data_mode": "UNAVAILABLE",
+      "data_status": "NOT_CONFIGURED",
+      "source": "Live review analysis unavailable",
+      "live_success": false
+    },
+    {
+      "probe": "meesho",
+      "url": "https://www.meesho.com/example",
+      "attempted_live_fetch": false,
+      "status": "DATA_ACCESS_UNAVAILABLE",
+      "platform": "meesho",
+      "provider": "meesho",
+      "provider_configured": false,
+      "n_reviews": 0,
+      "has_product": false,
+      "data_mode": "UNAVAILABLE",
+      "data_status": "NOT_CONFIGURED",
+      "source": "Live review analysis unavailable",
+      "live_success": false
+    },
+    {
+      "probe": "ajio",
+      "url": "https://www.ajio.com/example",
+      "attempted_live_fetch": false,
+      "status": "DATA_ACCESS_UNAVAILABLE",
+      "platform": "ajio",
+      "provider": "ajio",
+      "provider_configured": false,
+      "n_reviews": 0,
+      "has_product": false,
+      "data_mode": "UNAVAILABLE",
+      "data_status": "NOT_CONFIGURED",
+      "source": "Live review analysis unavailable",
+      "live_success": false
+    },
+    {
+      "probe": "croma",
+      "url": "https://www.croma.com/example",
+      "attempted_live_fetch": false,
+      "status": "DATA_ACCESS_UNAVAILABLE",
+      "platform": "croma",
+      "provider": "croma",
+      "provider_configured": false,
+      "n_reviews": 0,
+      "has_product": false,
+      "data_mode": "UNAVAILABLE",
+      "data_status": "NOT_CONFIGURED",
+      "source": "Live review analysis unavailable",
+      "live_success": false
+    },
+    {
+      "probe": "reliance_digital",
+      "url": "https://www.reliancedigital.in/example",
+      "attempted_live_fetch": false,
+      "status": "DATA_ACCESS_UNAVAILABLE",
+      "platform": "reliance_digital",
+      "provider": "reliance_digital",
+      "provider_configured": false,
+      "n_reviews": 0,
+      "has_product": false,
+      "data_mode": "UNAVAILABLE",
+      "data_status": "NOT_CONFIGURED",
+      "source": "Live review analysis unavailable",
+      "live_success": false
+    },
+    {
+      "probe": "tata_cliq",
+      "url": "https://www.tatacliq.com/example",
+      "attempted_live_fetch": false,
+      "status": "DATA_ACCESS_UNAVAILABLE",
+      "platform": "tata_cliq",
+      "provider": "tata_cliq",
+      "provider_configured": false,
+      "n_reviews": 0,
+      "has_product": false,
+      "data_mode": "UNAVAILABLE",
+      "data_status": "NOT_CONFIGURED",
+      "source": "Live review analysis unavailable",
+      "live_success": false
+    }
+  ],
+  "any_platform_returned_live_reviews": true,
+  "statement": "At least one configured provider returned live reviews."
+}

@@ -1,0 +1,189 @@
+{
+  "generated_at": "2026-08-18T04:35:02.295533+00:00",
+  "track": "trust_feature_engineering",
+  "input_files": {
+    "combined_reviews": "D:\\Trust_Analytics_System\\dataset\\cleaned\\behavior_eda\\reviews_combined_dedup.parquet",
+    "reviewers": "D:\\Trust_Analytics_System\\dataset\\cleaned\\behavior_eda\\reviewers.parquet",
+    "combined_rows": 21897475,
+    "reviewer_rows_source": 8789960
+  },
+  "output_files": {
+    "review_features": "D:\\Trust_Analytics_System\\dataset\\cleaned\\features\\review_features.parquet",
+    "reviewer_features": "D:\\Trust_Analytics_System\\dataset\\cleaned\\features\\reviewer_features.parquet",
+    "product_features": "D:\\Trust_Analytics_System\\dataset\\cleaned\\features\\product_features.parquet"
+  },
+  "row_counts": {
+    "review": 21897475,
+    "reviewer": 8789960,
+    "product": 2713418
+  },
+  "feature_counts": {
+    "review": 24,
+    "reviewer": 32,
+    "product": 25
+  },
+  "unavailable_fields": [
+    "verified_purchase",
+    "candidate_label on the 21.9M Track 1 corpus",
+    "BFR on Track 1 corpus",
+    "class as a trust label (rating polarity only)"
+  ],
+  "execution_time_sec": {
+    "review": 210.08,
+    "reviewer": 63.72,
+    "product": 76.9,
+    "total": 365.32
+  },
+  "processing_method": {
+    "review": "DuckDB CTE + joins on parquet; COPY to parquet; no pandas load of combined file",
+    "reviewer": "DuckDB: start from reviewers.parquet, join rating histogram from combined parquet GROUP BY",
+    "product": "DuckDB GROUP BY asin on combined parquet, LEFT JOIN reviewers.parquet aggregates"
+  },
+  "candidate_label": {
+    "status": "heuristic candidate suspicious-review label; NOT verified fraud ground truth",
+    "included_in_these_feature_tables": false,
+    "location": "dataset/cleaned/candidate_label/"
+  },
+  "protected_mtime_unchanged": true,
+  "data_quality_issues": [
+    "review: 21897475 rows with review_hour<>0 (timestamps may have time-of-day)"
+  ],
+  "validation_summary": {
+    "review": {
+      "schema": [
+        "review_id",
+        "reviewerID",
+        "asin",
+        "category",
+        "rating",
+        "helpful_votes",
+        "helpful_total",
+        "helpful_ratio",
+        "review_length_chars",
+        "review_length_words",
+        "summary_length",
+        "text_available",
+        "summary_available",
+        "text_very_short",
+        "unixReviewTime",
+        "review_datetime_utc",
+        "review_year",
+        "review_month",
+        "review_day_of_week",
+        "review_hour",
+        "product_rating_deviation",
+        "reviewer_rating_deviation",
+        "exact_text_copy_count",
+        "is_exact_duplicate_text"
+      ],
+      "row_stats": {
+        "n": 21897475,
+        "n_distinct_key": 21897475,
+        "duplicate_keys": 0,
+        "null_key": 0
+      },
+      "extra_checks": {
+        "min_rating": 1.0,
+        "max_rating": 5.0,
+        "rating_oob": 0,
+        "neg_len": 0,
+        "bad_dup_count": 0,
+        "nonzero_hour": 21897475
+      }
+    },
+    "reviewer": {
+      "schema": [
+        "reviewerID",
+        "review_count",
+        "unique_products",
+        "unique_categories",
+        "avg_rating",
+        "rating_std",
+        "rating_variance",
+        "rating_min",
+        "rating_max",
+        "rating_range",
+        "review_text_count",
+        "avg_review_length",
+        "median_review_length",
+        "helpful_votes_total",
+        "average_helpfulness_per_review",
+        "first_review_time",
+        "last_review_time",
+        "first_review_unix",
+        "last_review_unix",
+        "review_span_days",
+        "inclusive_active_days",
+        "reviews_per_active_day",
+        "products_per_category",
+        "n_rating_1",
+        "n_rating_2",
+        "n_rating_3",
+        "n_rating_4",
+        "n_rating_5",
+        "five_star_ratio",
+        "one_star_ratio",
+        "extreme_rating_ratio",
+        "rating_entropy"
+      ],
+      "row_stats": {
+        "n": 8789960,
+        "n_distinct_key": 8789960,
+        "duplicate_keys": 0,
+        "null_key": 0
+      },
+      "extra_checks": {
+        "neg_span": 0,
+        "null_std": 5168404,
+        "null_std_n1": 5168404,
+        "null_std_n_gt1": 0,
+        "rating_oob": 0,
+        "min_n": 1,
+        "max_n": 1658
+      }
+    },
+    "product": {
+      "schema": [
+        "asin",
+        "review_count",
+        "unique_reviewers",
+        "n_categories",
+        "category",
+        "avg_rating",
+        "rating_std",
+        "rating_min",
+        "rating_max",
+        "rating_range",
+        "five_star_ratio",
+        "four_star_ratio",
+        "three_star_ratio",
+        "two_star_ratio",
+        "one_star_ratio",
+        "rating_entropy",
+        "avg_helpful_votes",
+        "review_text_coverage",
+        "first_review_unix",
+        "last_review_unix",
+        "review_span_days",
+        "review_velocity",
+        "avg_reviewer_review_count",
+        "avg_reviewer_product_diversity",
+        "avg_reviewer_rating_variability"
+      ],
+      "row_stats": {
+        "n": 2713418,
+        "n_distinct_key": 2713418,
+        "duplicate_keys": 0,
+        "null_key": 0
+      },
+      "extra_checks": {
+        "neg_span": 0,
+        "rating_oob": 0,
+        "null_std_n1": 1314695,
+        "null_std_n_gt1": 0,
+        "min_n": 1,
+        "max_n": 17846
+      }
+    }
+  }
+}

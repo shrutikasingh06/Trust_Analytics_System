@@ -1,0 +1,460 @@
+{
+  "status": "LIVE",
+  "data_status": "LIVE",
+  "platform": "amazon",
+  "platform_label": "Amazon",
+  "provider": "amazon",
+  "source": "Amazon (SerpAPI)",
+  "provider_configured": true,
+  "data_mode": "LIVE",
+  "product": {
+    "platform": "amazon",
+    "product_id": "B072MQ5BRX",
+    "url": "https://www.amazon.com/AmazonFresh-Colombia-Ground-Coffee-Medium/dp/B072MQ5BRX/",
+    "title": "Amazon Fresh, Colombia Ground Coffee, Medium Roast, 32 Oz",
+    "brand": null,
+    "category": "Ground Coffee",
+    "price": 16.62,
+    "currency": null,
+    "rating": 4.4,
+    "rating_count": 12157,
+    "review_count": 12157,
+    "image_url": "https://m.media-amazon.com/images/I/51QbVAHxoVL._SY300_SX300_QL70_FMwebp_.jpg",
+    "extra": {}
+  },
+  "reviews": [
+    {
+      "review_id": "B072MQ5BRX-1",
+      "rating": 5.0,
+      "text_len": 1011,
+      "has_text": true,
+      "reviewer_id": null
+    },
+    {
+      "review_id": "B072MQ5BRX-2",
+      "rating": 5.0,
+      "text_len": 555,
+      "has_text": true,
+      "reviewer_id": null
+    },
+    {
+      "review_id": "B072MQ5BRX-3",
+      "rating": 4.0,
+      "text_len": 109,
+      "has_text": true,
+      "reviewer_id": null
+    },
+    {
+      "review_id": "B072MQ5BRX-4",
+      "rating": 5.0,
+      "text_len": 517,
+      "has_text": true,
+      "reviewer_id": null
+    },
+    {
+      "review_id": "B072MQ5BRX-5",
+      "rating": 5.0,
+      "text_len": 464,
+      "has_text": true,
+      "reviewer_id": null
+    },
+    {
+      "review_id": "B072MQ5BRX-6",
+      "rating": 5.0,
+      "text_len": 282,
+      "has_text": true,
+      "reviewer_id": null
+    },
+    {
+      "review_id": "B072MQ5BRX-7",
+      "rating": 5.0,
+      "text_len": 378,
+      "has_text": true,
+      "reviewer_id": null
+    },
+    {
+      "review_id": "B072MQ5BRX-8",
+      "rating": 3.0,
+      "text_len": 759,
+      "has_text": true,
+      "reviewer_id": null
+    }
+  ],
+  "field_availability": {
+    "available": [
+      "product.platform",
+      "product.product_id",
+      "product.url",
+      "product.title",
+      "product.category",
+      "product.price",
+      "product.rating",
+      "product.rating_count",
+      "product.review_count",
+      "product.image_url",
+      "review.platform (8/8)",
+      "review.product_id (8/8)",
+      "review.review_id (8/8)",
+      "review.reviewer_name (8/8)",
+      "review.rating (8/8)",
+      "review.title (8/8)",
+      "review.text (8/8)",
+      "review.helpful_votes (5/8)",
+      "review.review_date (8/8)",
+      "review.verified_purchase (8/8)"
+    ],
+    "unavailable": [
+      "product.brand",
+      "review.reviewer_id"
+    ]
+  },
+  "trust_analysis": {
+    "product_trust_score": 80,
+    "review_risk_band": "Low",
+    "n_reviews_used": 8,
+    "data_mode": "LIVE",
+    "historical_training_data_used_as_product_reviews": false,
+    "metrics": {
+      "n_reviews": 8,
+      "avg_rating": 4.625,
+      "rating_std": 0.696,
+      "five_star_ratio": 0.75,
+      "duplicate_text_ratio": 0.0,
+      "reviewer_diversity": null,
+      "avg_review_length_chars": 509.375,
+      "near_duplicate_pairs": 0,
+      "rating_entropy": 0.7356
+    },
+    "contributing_factors": [
+      {
+        "direction": "positive",
+        "label": "review_quality",
+        "detail": "Text coverage and mean length (capped at 200 chars).",
+        "feature": "review_quality",
+        "value": 100.0
+      },
+      {
+        "direction": "neutral",
+        "label": "rating_consistency",
+        "detail": "Rating entropy plus 5-star share. Not a fraud label.",
+        "feature": "rating_consistency",
+        "value": 54.6367
+      },
+      {
+        "direction": "positive",
+        "label": "suspicious_review_risk",
+        "detail": "100 minus mean per-review suspicion risk.",
+        "feature": "suspicious_review_risk",
+        "value": 100.0
+      },
+      {
+        "direction": "positive",
+        "label": "review_diversity_activity",
+        "detail": "Log sample-size prior (saturates near 50 live reviews).",
+        "feature": "review_diversity_activity",
+        "value": 55.8831
+      },
+      {
+        "direction": "positive",
+        "label": "duplicate_text_ratio",
+        "detail": "Share of live reviews whose text hash is repeated.",
+        "feature": "duplicate_text_ratio",
+        "value": 0.0
+      },
+      {
+        "direction": "positive",
+        "label": "n_high_suspicion_reviews",
+        "detail": "Count of live reviews with High suspicion-risk band. Not verified fraud.",
+        "feature": "n_high_suspicion_reviews",
+        "value": 0
+      }
+    ],
+    "rating_distribution": {
+      "1": 0,
+      "2": 0,
+      "3": 1,
+      "4": 1,
+      "5": 6
+    },
+    "review_flags": [
+      {
+        "review_id": "B072MQ5BRX-1",
+        "rating": 5.0,
+        "flags": [],
+        "risk_band": "Low"
+      },
+      {
+        "review_id": "B072MQ5BRX-2",
+        "rating": 5.0,
+        "flags": [],
+        "risk_band": "Low"
+      },
+      {
+        "review_id": "B072MQ5BRX-3",
+        "rating": 4.0,
+        "flags": [],
+        "risk_band": "Low"
+      },
+      {
+        "review_id": "B072MQ5BRX-4",
+        "rating": 5.0,
+        "flags": [],
+        "risk_band": "Low"
+      },
+      {
+        "review_id": "B072MQ5BRX-5",
+        "rating": 5.0,
+        "flags": [],
+        "risk_band": "Low"
+      },
+      {
+        "review_id": "B072MQ5BRX-6",
+        "rating": 5.0,
+        "flags": [],
+        "risk_band": "Low"
+      },
+      {
+        "review_id": "B072MQ5BRX-7",
+        "rating": 5.0,
+        "flags": [],
+        "risk_band": "Low"
+      },
+      {
+        "review_id": "B072MQ5BRX-8",
+        "rating": 3.0,
+        "flags": [],
+        "risk_band": "Low"
+      }
+    ],
+    "notes": [
+      "Scores use only reviews returned for this URL. Historical training parquet was not used as this product\u2019s reviews.",
+      "Language is risk-pattern based. This is not a claim that any review is fake."
+    ]
+  },
+  "user_message": "Live product reviews were retrieved from the configured provider and analyzed.",
+  "required_action": null,
+  "review_count": 8,
+  "product_trust_score": 80,
+  "trust_level": "High",
+  "review_summary": {
+    "n_reviews": 8,
+    "n_with_text": 8,
+    "n_with_rating": 8,
+    "avg_rating": 4.625,
+    "avg_review_length_chars": 509.375,
+    "rating_distribution": {
+      "1": 0,
+      "2": 0,
+      "3": 1,
+      "4": 1,
+      "5": 6
+    },
+    "duplicate_text_ratio": 0.0
+  },
+  "sentiment_summary": {
+    "method": "lexicon",
+    "distinct_from_star_rating": true,
+    "distinct_from_suspicion_risk": true,
+    "n_scored": 8,
+    "n_unscored_missing_text": 0,
+    "counts": {
+      "positive": 7,
+      "mixed": 1
+    }
+  },
+  "suspicious_review_summary": {
+    "mean_suspicion_risk": 0,
+    "level": "Low",
+    "n_high": 0,
+    "n_medium": 0,
+    "n_low": 8,
+    "disclaimer": "Risk assessment only. Not a claim that reviews are fake."
+  },
+  "reviewer_summary": {
+    "available": false,
+    "reason": "No reviewer_id on live reviews; reviewer behavior was not invented.",
+    "n_reviewers": 0
+  },
+  "explanations": [
+    {
+      "feature": "review_quality",
+      "observed_value": 100.0,
+      "interpretation": "Text coverage and mean length (capped at 200 chars).",
+      "direction": "positive",
+      "contribution": 12.5,
+      "component": "review_quality"
+    },
+    {
+      "feature": "rating_consistency",
+      "observed_value": 54.6367,
+      "interpretation": "Rating entropy plus 5-star share. Not a fraud label.",
+      "direction": "neutral",
+      "contribution": 1.16,
+      "component": "rating_consistency"
+    },
+    {
+      "feature": "suspicious_review_risk",
+      "observed_value": 100.0,
+      "interpretation": "100 minus mean per-review suspicion risk.",
+      "direction": "positive",
+      "contribution": 15.62,
+      "component": "suspicious_review_risk"
+    },
+    {
+      "feature": "review_diversity_activity",
+      "observed_value": 55.8831,
+      "interpretation": "Log sample-size prior (saturates near 50 live reviews).",
+      "direction": "positive",
+      "contribution": 1.1,
+      "component": "review_diversity_activity"
+    },
+    {
+      "feature": "duplicate_text_ratio",
+      "observed_value": 0.0,
+      "interpretation": "Share of live reviews whose text hash is repeated.",
+      "direction": "positive",
+      "contribution": null,
+      "component": "suspicious_review_risk"
+    },
+    {
+      "feature": "n_high_suspicion_reviews",
+      "observed_value": 0,
+      "interpretation": "Count of live reviews with High suspicion-risk band. Not verified fraud.",
+      "direction": "positive",
+      "contribution": null,
+      "component": "suspicious_review_risk"
+    }
+  ],
+  "review_analyses": [
+    {
+      "review_id": "B072MQ5BRX-1",
+      "rating": 5.0,
+      "rating_polarity": "positive",
+      "sentiment_label": "positive",
+      "suspicion_risk": 0,
+      "risk_level": "Low",
+      "reasons": [],
+      "review_length_chars": 1011
+    },
+    {
+      "review_id": "B072MQ5BRX-2",
+      "rating": 5.0,
+      "rating_polarity": "positive",
+      "sentiment_label": "positive",
+      "suspicion_risk": 0,
+      "risk_level": "Low",
+      "reasons": [],
+      "review_length_chars": 555
+    },
+    {
+      "review_id": "B072MQ5BRX-3",
+      "rating": 4.0,
+      "rating_polarity": "positive",
+      "sentiment_label": "positive",
+      "suspicion_risk": 0,
+      "risk_level": "Low",
+      "reasons": [],
+      "review_length_chars": 109
+    },
+    {
+      "review_id": "B072MQ5BRX-4",
+      "rating": 5.0,
+      "rating_polarity": "positive",
+      "sentiment_label": "positive",
+      "suspicion_risk": 0,
+      "risk_level": "Low",
+      "reasons": [],
+      "review_length_chars": 517
+    },
+    {
+      "review_id": "B072MQ5BRX-5",
+      "rating": 5.0,
+      "rating_polarity": "positive",
+      "sentiment_label": "positive",
+      "suspicion_risk": 0,
+      "risk_level": "Low",
+      "reasons": [],
+      "review_length_chars": 464
+    },
+    {
+      "review_id": "B072MQ5BRX-6",
+      "rating": 5.0,
+      "rating_polarity": "positive",
+      "sentiment_label": "positive",
+      "suspicion_risk": 0,
+      "risk_level": "Low",
+      "reasons": [],
+      "review_length_chars": 282
+    },
+    {
+      "review_id": "B072MQ5BRX-7",
+      "rating": 5.0,
+      "rating_polarity": "positive",
+      "sentiment_label": "positive",
+      "suspicion_risk": 0,
+      "risk_level": "Low",
+      "reasons": [],
+      "review_length_chars": 378
+    },
+    {
+      "review_id": "B072MQ5BRX-8",
+      "rating": 3.0,
+      "rating_polarity": "neutral",
+      "sentiment_label": "mixed",
+      "suspicion_risk": 0,
+      "risk_level": "Low",
+      "reasons": [],
+      "review_length_chars": 759
+    }
+  ],
+  "reviewer_analyses": [],
+  "trust_breakdown": [
+    {
+      "name": "review_quality",
+      "weight": 0.2,
+      "applied_weight": null,
+      "score": 100.0,
+      "available": true,
+      "note": "Text coverage and mean length (capped at 200 chars)."
+    },
+    {
+      "name": "rating_consistency",
+      "weight": 0.2,
+      "applied_weight": null,
+      "score": 54.6367,
+      "available": true,
+      "note": "Rating entropy plus 5-star share. Not a fraud label."
+    },
+    {
+      "name": "reviewer_reliability",
+      "weight": 0.2,
+      "applied_weight": null,
+      "score": null,
+      "available": false,
+      "note": "Need reviewer_id."
+    },
+    {
+      "name": "suspicious_review_risk",
+      "weight": 0.25,
+      "applied_weight": null,
+      "score": 100.0,
+      "available": true,
+      "note": "100 minus mean per-review suspicion risk."
+    },
+    {
+      "name": "review_diversity_activity",
+      "weight": 0.15,
+      "applied_weight": null,
+      "score": 55.8831,
+      "available": true,
+      "note": "Log sample-size prior (saturates near 50 live reviews)."
+    }
+  ],
+  "weighting_notes": [
+    "Weights are a documented research prior, not a fitted model. No validation accuracy is claimed.",
+    "If a component cannot be computed from live fields, it is omitted and remaining weights are renormalized.",
+    "Suspicion risk is behavioral. It is not verified fraud ground truth and is not Track 2 candidate_label.",
+    "Sentiment is lexicon polarity of text. Star rating polarity is separate. Neither is a fake-review label.",
+    "Reviewer metrics use only reviewers observed in THIS live sample. Historical reviewer_features.parquet is not joined."
+  ]
+}

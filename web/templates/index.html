@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Analyze product reviews and understand trust, sentiment, reviewer behavior, and suspicious-review risk." />
+  <title>E-Commerce Trust Analytics</title>
+  <meta http-equiv="Cache-Control" content="no-store" />
+  <link rel="stylesheet" href="/static/app.css?v={{ asset_version }}" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+</head>
+<body>
+  <header class="top">
+    <h1>E-Commerce Trust Analytics</h1>
+    <p class="lede">Analyze product reviews and understand trust, sentiment, reviewer behavior, and suspicious-review risk.</p>
+  </header>
+
+  <main>
+    <section class="card search">
+      <label for="url">Paste a product URL</label>
+      <div class="row">
+        <input id="url" type="text" inputmode="url" placeholder="Paste a product URL" autocomplete="url" spellcheck="false" />
+        <button id="analyze" type="button">Analyze Product</button>
+      </div>
+      <ul class="platforms" aria-label="Supported platforms">
+        {% for name in supported %}<li>{{ name }}</li>{% endfor %}
+      </ul>
+      <p class="hint">The store is detected automatically. Product details and review analysis are shown separately when review text is missing.</p>
+      <div id="detectBox" class="detect hidden"></div>
+    </section>
+
+    <section id="loadingBox" class="card loading hidden" aria-live="polite">
+      <div class="spinner" aria-hidden="true"></div>
+      <p id="loadingText">Analyzing product...</p>
+    </section>
+
+    <section id="identityBox" class="card hidden"></section>
+    <section id="errorBox" class="card error hidden"></section>
+    <section id="trustBox" class="hidden"></section>
+    <section id="breakdownBox" class="hidden"></section>
+    <section id="statsBox" class="hidden"></section>
+    <section id="sentimentBox" class="hidden"></section>
+    <section id="suspicionBox" class="hidden"></section>
+    <section id="reviewsBox" class="hidden"></section>
+    <section id="reviewerBox" class="hidden"></section>
+    <section id="explainBox" class="hidden"></section>
+    <section id="historicalBox" class="hidden"></section>
+  </main>
+
+  <footer>
+    <p>
+      Trust, sentiment, and review risk score are different measures.
+      A risk score of 0 is low risk and 100 is high risk. It is not a claim that reviews are fake.
+    </p>
+  </footer>
+  <script src="/static/app.js?v={{ asset_version }}"></script>
+</body>
+</html>
